@@ -626,6 +626,7 @@
       <a class="nav-link" href="#lecon-24">24</a>
       <a class="nav-link" href="#lecon-25">25</a>
       <a class="nav-link" href="#lecon-26">26</a>
+      <a class="nav-link" href="#lecon-27" style="color:#f59e0b">27 ★</a>
     </nav>
   </div>
 </header>
@@ -705,6 +706,7 @@
         <a class="toc-link" href="#lecon-24"><span class="toc-dot" style="background:#60a5fa"></span>24 — Microsoft 365 Copilot</a>
         <a class="toc-link" href="#lecon-25"><span class="toc-dot" style="background:#60a5fa"></span>25 — Power Automate & automatisation</a>
         <a class="toc-link" href="#lecon-26"><span class="toc-dot" style="background:#60a5fa"></span>26 — Claude dans vos fichiers Office</a>
+        <a class="toc-link" href="#lecon-27" style="border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.06)"><span class="toc-dot" style="background:#f59e0b"></span>27 ★ Cas concret — Automatisation Event</a>
       </div>
     </div>
   </div>
@@ -2185,6 +2187,233 @@
         <div class="step"><div class="step-num">4</div><div><strong>Récupérez le résultat</strong><br>Copiez le texte amélioré, la formule générée ou la macro VBA directement dans votre document Office.</div></div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ========== LEÇON 27 — Cas concret : Automatisation Event ========== -->
+<section class="page" id="lecon-27">
+  <div class="lesson-header">
+    <div>
+      <div class="tag" style="background:rgba(245,158,11,0.12);color:#f59e0b">★ Cas concret — Leçon 27</div>
+      <h2>Automatisation des demandes Event</h2>
+    </div>
+    <a class="btn btn-secondary" href="#accueil">↩ Retour</a>
+  </div>
+
+  <div class="card lesson-card" style="margin-bottom:18px;border-color:rgba(245,158,11,0.25);background:linear-gradient(135deg,rgba(245,158,11,0.06),var(--surface))">
+    <p style="color:var(--text);font-size:1rem;line-height:1.7;">Ce chapitre présente une application <strong>réelle et concrète</strong> de Power Automate et de l'IA au sein de notre organisation. L'objectif : aider l'équipe Event à traiter plus rapidement les demandes reçues par email, sans rien automatiser qui ne soit d'abord validé par un humain.</p>
+  </div>
+
+  <div class="lesson-grid">
+
+    <div class="card lesson-card">
+      <h3>Le problème à résoudre</h3>
+      <p>L'équipe Event reçoit des demandes par email concernant des salles, banquets, séminaires, groupes et événements privés. Chaque demande nécessite de :</p>
+      <div class="example-list">
+        <div class="example"><strong>Relire l'email et comprendre la demande</strong><span>Type d'événement, date, nombre de personnes, besoins restauration/technique/hébergement...</span></div>
+        <div class="example"><strong>Créer une fiche de suivi manuellement</strong><span>Souvent dans un fichier Excel partagé — risques de doublons, de conflits et d'oublis.</span></div>
+        <div class="example"><strong>Rédiger une première réponse</strong><span>Remercier, reformuler ce qui a été compris, demander les informations manquantes.</span></div>
+        <div class="example"><strong>Notifier l'équipe</strong><span>S'assurer que la bonne personne est au courant et prend en charge la demande.</span></div>
+      </div>
+      <div class="highlight highlight-warn" style="margin-top:12px;"><strong>Risques sans automatisation</strong>Demandes oubliées, informations non structurées, temps perdu à recopier, difficulté à prioriser, pas de vue d'ensemble sur le volume et les statuts.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>La solution proposée — Vue d'ensemble</h3>
+      <p>Un flux Power Automate déclenché à chaque nouvel email entrant dans le dossier Event. L'IA analyse, extrait, structure et prépare — l'équipe valide et décide.</p>
+      <div class="flow">
+        <div class="flow-box"><strong>📧 Email client reçu</strong><span>Dossier Outlook dédié "Event"</span></div>
+        <div class="arrow">↓</div>
+        <div class="flow-box"><strong>🤖 Power Automate détecte le mail</strong><span>Déclencheur automatique</span></div>
+        <div class="arrow">↓</div>
+        <div class="flow-box"><strong>🧠 L'IA analyse et extrait les infos</strong><span>Type, date, nombre, besoins, priorité...</span></div>
+        <div class="arrow">↓</div>
+        <div class="flow-box"><strong>📋 Fiche créée dans SharePoint</strong><span>Tous les champs remplis automatiquement</span></div>
+        <div class="arrow">↓</div>
+        <div class="flow-box"><strong>✍️ Brouillon de réponse généré</strong><span>Stocké dans la fiche, non envoyé</span></div>
+        <div class="arrow">↓</div>
+        <div class="flow-box"><strong>🔔 Notification Teams à l'équipe</strong><span>Résumé de la demande + lien vers la fiche</span></div>
+        <div class="arrow">↓</div>
+        <div class="flow-box"><strong>✅ Validation humaine obligatoire</strong><span>L'équipe vérifie, complète et envoie</span></div>
+      </div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Exemple concret — Email entrant</h3>
+      <div class="example">
+        <strong>Email reçu d'un client</strong>
+        <span style="font-style:italic;display:block;margin-top:6px;padding:12px;background:var(--surface-3);border-radius:8px;line-height:1.7;">"Bonjour, nous cherchons une salle pour un séminaire d'entreprise le 18 septembre. Nous serions environ 45 personnes. Nous souhaitons une formule avec café d'accueil, lunch et projection. Pouvez-vous nous envoyer une proposition ? Bien à vous, Jean Dupont — Société ABC"</span>
+      </div>
+      <div style="margin-top:14px;">
+        <h3 style="margin-bottom:8px;">Fiche générée automatiquement</h3>
+        <table class="compare-table">
+          <tbody>
+            <tr><td>Type de demande</td><td style="color:var(--gpt)">Séminaire</td></tr>
+            <tr><td>Date souhaitée</td><td style="color:var(--gpt)">18 septembre</td></tr>
+            <tr><td>Nombre de personnes</td><td style="color:var(--gpt)">45</td></tr>
+            <tr><td>Restauration</td><td style="color:var(--gpt)">Café d'accueil + lunch</td></tr>
+            <tr><td>Technique</td><td style="color:var(--gpt)">Projection</td></tr>
+            <tr><td>Société</td><td style="color:var(--gpt)">Société ABC</td></tr>
+            <tr><td>Contact</td><td style="color:var(--gpt)">Jean Dupont</td></tr>
+            <tr><td>Statut</td><td style="color:var(--gpt)">Nouveau</td></tr>
+            <tr><td>Infos manquantes</td><td style="color:#f87171">Horaire, configuration salle, budget</td></tr>
+            <tr><td>Action recommandée</td><td style="color:var(--gpt)">Vérifier disponibilité → proposition</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Brouillon de réponse généré</h3>
+      <p>L'IA rédige automatiquement une première réponse professionnelle, stockée dans la fiche SharePoint. Elle n'est <strong>jamais envoyée automatiquement</strong>.</p>
+      <div class="example">
+        <strong>Brouillon généré</strong>
+        <span style="font-style:italic;display:block;margin-top:6px;padding:12px;background:var(--surface-3);border-radius:8px;line-height:1.7;">"Bonjour Monsieur Dupont, merci pour votre demande concernant l'organisation d'un séminaire pour environ 45 personnes le 18 septembre. Nous allons vérifier nos disponibilités et revenir vers vous avec une proposition adaptée comprenant la salle, l'accueil café, le lunch et les besoins de projection. Pourriez-vous également nous préciser l'horaire souhaité ainsi que la configuration de salle souhaitée ? Bien à vous, L'équipe Event"</span>
+      </div>
+      <div class="highlight highlight-warn" style="margin-top:12px;"><strong>Règle absolue</strong>Ce brouillon doit être relu et validé par un membre de l'équipe avant tout envoi. L'automatisation prépare — elle ne décide pas.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Notification Teams reçue par l'équipe</h3>
+      <p>Dès qu'une nouvelle demande est détectée, un message automatique est posté dans le canal Teams de l'équipe Event :</p>
+      <div class="example">
+        <strong>Message Teams automatique</strong>
+        <span style="display:block;margin-top:6px;padding:14px;background:var(--surface-3);border-radius:8px;line-height:1.8;font-size:0.9rem;">
+          🆕 <strong>Nouvelle demande Event reçue</strong><br>
+          Type : Séminaire &nbsp;|&nbsp; Client : Société ABC &nbsp;|&nbsp; Contact : Jean Dupont<br>
+          Date souhaitée : 18 septembre &nbsp;|&nbsp; Participants : 45<br>
+          Priorité : Normale &nbsp;|&nbsp; Statut : Nouveau<br><br>
+          ⚠️ Infos manquantes : horaire précis, configuration salle, budget<br>
+          ➡️ Prochaine action : vérifier les disponibilités et compléter la fiche<br><br>
+          🔗 <span style="color:#6366f1">Voir la fiche SharePoint →</span>
+        </span>
+      </div>
+      <p style="margin-top:10px;">Plus besoin de surveiller la boîte mail en permanence. La demande arrive directement là où travaille l'équipe.</p>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Les informations extraites automatiquement</h3>
+      <div class="chips">
+        <div class="chip">Nom du contact</div>
+        <div class="chip">Société</div>
+        <div class="chip">Email & téléphone</div>
+        <div class="chip">Type de demande</div>
+        <div class="chip">Date souhaitée</div>
+        <div class="chip">Heure début / fin</div>
+        <div class="chip">Nombre de personnes</div>
+        <div class="chip">Restauration</div>
+        <div class="chip">Hébergement</div>
+        <div class="chip">Technique</div>
+        <div class="chip">Budget (si mentionné)</div>
+        <div class="chip">Infos manquantes</div>
+        <div class="chip">Niveau de maturité</div>
+        <div class="chip">Priorité</div>
+        <div class="chip">Action recommandée</div>
+      </div>
+      <div class="highlight highlight-info" style="margin-top:14px;"><strong>Niveau de maturité</strong>L'IA évalue automatiquement si la demande est complète (Élevé), partielle (Moyen) ou trop vague pour être qualifiée (Faible). Cela aide l'équipe à prioriser sans relire chaque email.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Statuts de suivi des demandes</h3>
+      <table class="compare-table">
+        <thead><tr><th>Statut</th><th>Signification</th></tr></thead>
+        <tbody>
+          <tr><td style="color:#6ee7b7">Nouveau</td><td>Demande reçue, pas encore traitée</td></tr>
+          <tr><td style="color:#fcd34d">À qualifier</td><td>Informations insuffisantes</td></tr>
+          <tr><td style="color:#fcd34d">À vérifier</td><td>Disponibilité ou faisabilité à confirmer</td></tr>
+          <tr><td style="color:#a5b4fc">Brouillon prêt</td><td>Réponse préparée, en attente de validation</td></tr>
+          <tr><td style="color:#a5b4fc">Proposition envoyée</td><td>Une offre a été envoyée au client</td></tr>
+          <tr><td style="color:#f87171">À relancer</td><td>En attente de retour client</td></tr>
+          <tr><td style="color:#6ee7b7">Confirmé</td><td>Demande validée par le client</td></tr>
+          <tr><td style="color:var(--muted)">Perdu / Hors périmètre</td><td>Demande abandonnée, refusée ou non Event</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Pourquoi SharePoint plutôt qu'Excel</h3>
+      <div class="example-list">
+        <div class="example"><strong>Suivi multi-utilisateur propre</strong><span>Plusieurs membres de l'équipe peuvent travailler simultanément sans conflits de fichier.</span></div>
+        <div class="example"><strong>Vues filtrées</strong><span>"Afficher uniquement les demandes du jour", "Trier par priorité", "Voir les dossiers À relancer" — en un clic.</span></div>
+        <div class="example"><strong>Intégration native Power Automate</strong><span>Créer une fiche SharePoint depuis un flux est simple et fiable. Excel partagé est fragile dès que plusieurs personnes y accèdent en même temps.</span></div>
+        <div class="example"><strong>Traçabilité</strong><span>Historique des modifications, qui a changé quoi et quand.</span></div>
+      </div>
+      <div class="highlight highlight-info" style="margin-top:12px;"><strong>Pour démarrer</strong>Excel peut fonctionner pour un test rapide. Mais dès que l'équipe adopte le flux, passer à une liste SharePoint est fortement recommandé.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Version 1 recommandée — Commencer simple</h3>
+      <p>Inutile de tout automatiser dès le départ. La version 1 couvre l'essentiel avec un risque minimal :</p>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div><strong>Détection d'un nouvel email dans le dossier Event</strong><br>Créer une règle Outlook qui déplace automatiquement les emails Event dans un dossier dédié.</div></div>
+        <div class="step"><div class="step-num">2</div><div><strong>Extraction des informations principales par l'IA</strong><br>Type, date, personnes, besoins, priorité, infos manquantes.</div></div>
+        <div class="step"><div class="step-num">3</div><div><strong>Création automatique de la fiche SharePoint</strong><br>Tous les champs remplis. Statut initial : "Nouveau".</div></div>
+        <div class="step"><div class="step-num">4</div><div><strong>Génération du brouillon de réponse</strong><br>Stocké dans la fiche. Jamais envoyé automatiquement.</div></div>
+        <div class="step"><div class="step-num">5</div><div><strong>Notification Teams à l'équipe</strong><br>Résumé de la demande avec lien vers la fiche.</div></div>
+        <div class="step"><div class="step-num">6</div><div><strong>Validation humaine — toujours</strong><br>L'équipe Event vérifie, complète et envoie la réponse.</div></div>
+      </div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Ce qu'on n'automatise pas (encore)</h3>
+      <div class="example-list">
+        <div class="example"><strong>❌ Envoi direct au client</strong><span>Un humain relit et envoie toujours. Aucune réponse commerciale ne part sans validation.</span></div>
+        <div class="example"><strong>❌ Confirmation de disponibilité</strong><span>Le flux ne confirme rien. Il prépare uniquement la qualification.</span></div>
+        <div class="example"><strong>❌ Génération de devis</strong><span>Réservé à la version 2, après validation du flux de base.</span></div>
+        <div class="example"><strong>❌ Relances automatiques</strong><span>Gérées manuellement dans un premier temps.</span></div>
+      </div>
+      <div class="highlight highlight-claude" style="margin-top:12px;"><strong>Version 2 — Pour la suite</strong>Relances automatiques des demandes sans réponse, attribution à un membre de l'équipe, génération de propositions commerciales, tableau de bord hebdomadaire, suivi des conversions (demande → proposition → confirmation → perdu).</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Bénéfices attendus</h3>
+      <div class="lesson-grid" style="gap:12px;margin-top:4px;">
+        <div>
+          <p style="font-weight:700;color:var(--gpt);margin-bottom:8px;">Pour l'équipe Event</p>
+          <div class="chips">
+            <div class="chip chip-gpt">Moins de temps à recopier</div>
+            <div class="chip chip-gpt">Meilleure visibilité</div>
+            <div class="chip chip-gpt">Moins d'oublis</div>
+            <div class="chip chip-gpt">Meilleure priorisation</div>
+            <div class="chip chip-gpt">Historique centralisé</div>
+          </div>
+        </div>
+        <div>
+          <p style="font-weight:700;color:var(--claude);margin-bottom:8px;">Pour le management</p>
+          <div class="chips">
+            <div class="chip chip-claude">Vue sur le volume</div>
+            <div class="chip chip-claude">Suivi des dossiers ouverts</div>
+            <div class="chip chip-claude">Identification des blocages</div>
+            <div class="chip chip-claude">Analyse commerciale</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Risques et mesures de contrôle</h3>
+      <table class="compare-table">
+        <thead><tr><th>Risque</th><th>Mesure de contrôle</th></tr></thead>
+        <tbody>
+          <tr><td>Mauvaise extraction d'une date ou d'un nombre</td><td>Validation humaine obligatoire avant toute action</td></tr>
+          <tr><td>Email ambigu ou incomplet</td><td>Statut automatique "À qualifier"</td></tr>
+          <tr><td>Trop de faux positifs (emails non Event)</td><td>Dossier Outlook dédié + filtre mots-clés</td></tr>
+          <tr><td>Brouillon de réponse inadapté</td><td>Jamais envoyé sans relecture humaine</td></tr>
+          <tr><td>Adoption faible par l'équipe</td><td>Commencer simple, tester sur quelques semaines</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Proposition de pilote</h3>
+      <div class="example-list">
+        <div class="example"><strong>Durée recommandée</strong><span>2 à 4 semaines sur un dossier Outlook Event dédié.</span></div>
+        <div class="example"><strong>Critères de succès</strong><span>Au moins 80 % des demandes Event correctement détectées. Champs principaux extraits dans la majorité des cas. L'équipe gagne du temps. Aucune réponse incorrecte envoyée automatiquement.</span></div>
+        <div class="example"><strong>Ce qu'on mesure</strong><span>Nombre de fiches créées automatiquement, qualité des extractions, utilité des brouillons, adoption par l'équipe, erreurs rencontrées.</span></div>
+      </div>
+      <div class="highlight" style="background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.25);color:#fcd34d;margin-top:12px;"><strong>Ce que ce cas démontre</strong>Une automatisation utile ne remplace pas les gens — elle prépare leur travail. L'équipe Event garde le contrôle total sur chaque décision commerciale. L'IA s'occupe de la partie fastidieuse : lire, structurer, rédiger un premier jet. Les humains s'occupent de la partie qui compte : comprendre, juger, décider et répondre.</div>
+    </div>
+
   </div>
 </section>
 
