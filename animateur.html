@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guide de l'animateur — Exercices IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="exercices.css">
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand">
+      <div class="brand-mark staff">⚙</div>
+      Guide animateur
+    </div>
+    <nav class="nav-links">
+      <a class="nav-link" href="#accueil">Accueil</a>
+      <a class="nav-link" href="#seances">Séances</a>
+      <a class="nav-link" href="#profils">Profils</a>
+      <span class="nav-sep"></span>
+      <a class="nav-link nav-code c1" href="#rep-d">Rép. D</a>
+      <a class="nav-link nav-code c2" href="#rep-e">Rép. E</a>
+      <a class="nav-link nav-code c3" href="#rep-t">Rép. T</a>
+      <a class="nav-link nav-code c4" href="#rep-c">Rép. C</a>
+      <a class="nav-link nav-code c5" href="#rep-p">Rép. P</a>
+      <a class="nav-link nav-code c6" href="#rep-r">Rép. R</a>
+      <span class="nav-sep"></span>
+      <a class="nav-link" href="#debrief">Débrief</a>
+      <a class="nav-link" href="#preparer">Préparer</a>
+      <span class="nav-sep"></span>
+      <a class="nav-link" href="exercices.html" style="color:#f59e0b">La présentation ›</a>
+    </nav>
+  </div>
+</header>
+
+<div class="banner">
+  <div class="banner-inner">
+    ⚠ &nbsp;Cette page vous est destinée. <strong>Ne la projetez pas</strong> — elle contient les réponses des exercices et une description des profils de participants. Ce qui s'affiche en séance, c'est <a href="exercices.html">la présentation</a>.
+  </div>
+</div>
+
+<main>
+
+<!-- ========== ACCUEIL ========== -->
+<section class="page" id="accueil">
+  <div class="hero-grid">
+    <div class="card hero-main">
+      <div class="eyebrow staff">● Document interne d'animation</div>
+      <h1 class="hero-title">Guide de<br><em>l'animateur</em></h1>
+      <p class="hero-lead">
+        Tout ce qui ne doit pas être affiché : les scénarios de séance minutés, les profils de participants, les réponses attendues de chaque exercice, et les pièges d'animation.
+      </p>
+      <p class="hero-lead" style="margin-top:-14px;">
+        La présentation, elle, ne contient que ce que les participants doivent voir. Le constat et l'explication de chaque exercice y sont cachés derrière un bouton — c'est vous qui les révélez au moment de la mise en commun, ou eux quand ils ont fini.
+      </p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a class="btn btn-primary" href="#seances">Les scénarios de séance ›</a>
+        <a class="btn btn-secondary" href="#profils">Les cinq profils ›</a>
+        <a class="btn btn-secondary" href="#rep-d">Les réponses ›</a>
+        <a class="btn btn-secondary" href="exercices.html">↩ La présentation</a>
+      </div>
+    </div>
+    <div class="card hero-side">
+      <div class="stat-card">
+        <div class="stat-label">Règle de proportion</div>
+        <div class="stat-value">Un tiers, deux tiers</div>
+        <div class="stat-desc">Un tiers du temps en théorie au maximum, deux tiers en pratique et en mise en commun.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Ce que ça vous libère</div>
+        <div class="stat-value">25 min</div>
+        <div class="stat-desc">Pendant lesquelles vous n'êtes plus devant tout le monde : cas individuels, ou théorie avec ceux qui la veulent.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Préparation</div>
+        <div class="stat-value">Aucune</div>
+        <div class="stat-desc">Les fiches sont la préparation. Vérifiez seulement les deux calculs de E2 le matin même.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson-grid">
+    <div class="card lesson-card">
+      <h3>Pourquoi ce format plutôt qu'un cours</h3>
+      <p>Le problème d'une formation IA en groupe n'est pas le niveau moyen, c'est <strong>l'écart</strong> : dans la même salle, l'un n'a jamais ouvert ChatGPT, l'autre l'utilise tous les jours, un troisième n'a aucun abonnement et un quatrième a un cas très précis à régler qui n'intéresse personne d'autre. Une séance linéaire ne peut satisfaire aucun des quatre.</p>
+      <p>Les exercices règlent cela en vous libérant : pendant que le groupe travaille, vous pouvez traiter un cas personnel dans un coin, ou poursuivre la théorie avec les trois qui la veulent, sans que les autres attendent.</p>
+      <div class="highlight highlight-key"><strong>Le seul choix vraiment structurant</strong>Les exercices sont volontairement <em>hors métier</em>. Un exercice métier fait immédiatement partir le débat sur le fond du métier, et le mécanisme est perdu. Chacun transpose ensuite lui-même — c'est justement la compétence visée. Attendez-vous à devoir le justifier une fois par séance.</div>
+    </div>
+    <div class="card lesson-card">
+      <h3>Comment cette page est organisée</h3>
+      <div class="example-list">
+        <div class="example"><strong><a href="#seances" style="color:#a5b4fc">Séances ›</a></strong><span>Trois scénarios minutés (60, 45 et 90 min), les trois pistes à faire tourner en parallèle, les cinq règles à annoncer, et ce qui fait rater une séance.</span></div>
+        <div class="example"><strong><a href="#profils" style="color:#a5b4fc">Profils ›</a></strong><span>Cinq profils de participants, avec les fiches à donner à chacun, celles à éviter, et l'ordre dans lequel les donner.</span></div>
+        <div class="example"><strong>Réponses <a href="#rep-d" style="color:#a5b4fc">D</a> · <a href="#rep-e" style="color:#a5b4fc">E</a> · <a href="#rep-t" style="color:#a5b4fc">T</a> · <a href="#rep-c" style="color:#a5b4fc">C</a> · <a href="#rep-p" style="color:#a5b4fc">P</a> · <a href="#rep-r" style="color:#a5b4fc">R</a></strong><span>Pour chaque exercice : la réponse attendue, ce qu'il faut faire ressortir, et le piège d'animation à éviter.</span></div>
+        <div class="example"><strong><a href="#debrief" style="color:#a5b4fc">Débrief ›</a></strong><span>Les six mécanismes à faire sortir, comment faire parler sans mettre personne en difficulté, et ce qu'on écrit au tableau.</span></div>
+        <div class="example"><strong><a href="#preparer" style="color:#a5b4fc">Préparer ›</a></strong><span>Les trois minutes de vérification de la veille, et ce qu'il faut avoir en tête sur les outils.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SÉANCES ========== -->
+<section class="page" id="seances">
+  <div class="lesson-header">
+    <div>
+      <div class="tag tag-staff">● Animation — Séances</div>
+      <h2>Trois scénarios de séance</h2>
+    </div>
+    <a class="btn btn-secondary" href="#accueil">↩ Retour</a>
+  </div>
+  <div class="lesson-grid">
+
+    <div class="card lesson-card">
+      <h3>Scénario A — La séance à deux vitesses <span style="color:var(--muted);font-weight:400">(60 min)</span></h3>
+      <p>Le format par défaut, à utiliser quand le groupe est mélangé.</p>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div><strong>0 → 5 min · Le contrat de séance</strong>« On va faire, pas écouter. Vingt minutes d'explication, puis chacun travaille sur un exercice différent selon son niveau. Personne ne restera bloqué à attendre. » Affichez la page <a href="exercices.html#regles" style="color:#a5b4fc">Règles</a> pendant que vous le dites.</div></div>
+        <div class="step"><div class="step-num">2</div><div><strong>5 → 20 min · Un seul sujet théorique</strong>Une ou deux leçons de la formation, pas plus. Résistez à l'envie de couvrir : c'est la première cause de séance ratée.</div></div>
+        <div class="step"><div class="step-num">3</div><div><strong>20 → 45 min · Les trois pistes en parallèle</strong>Chacun prend une fiche selon sa piste. Vous circulez. C'est le moment où vous réglez les deux ou trois cas particuliers qui monopolisaient toute la séance avant.</div></div>
+        <div class="step"><div class="step-num">4</div><div><strong>45 → 55 min · La mise en commun</strong>Trois personnes, une phrase chacune, puis vous projetez le bouton de révélation de la fiche concernée. Vous notez au tableau le mécanisme, pas le résultat.</div></div>
+        <div class="step"><div class="step-num">5</div><div><strong>55 → 60 min · Un seul devoir</strong>Un exercice à refaire chez soi cette semaine, sur un vrai sujet à soi. Un seul, sinon aucun ne sera fait. La page <a href="exercices.html#retenir" style="color:#a5b4fc">À retenir</a> propose déjà C2.</div></div>
+      </div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Les trois pistes à faire tourner en même temps</h3>
+      <div class="table-wrap">
+        <table class="compare-table">
+          <thead><tr><th>Piste</th><th>Pour qui</th><th>Fiches</th><th>Vous</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Guidée</td>
+              <td>Découvre, ou pas d'abonnement</td>
+              <td>D1, puis E1, puis T1</td>
+              <td>Vous lisez la consigne à voix haute, tout le monde avance ensemble</td>
+            </tr>
+            <tr>
+              <td>Libre</td>
+              <td>Déjà à l'aise, sans méthode</td>
+              <td>Une fiche ◑ au choix dans la famille du jour</td>
+              <td>Disponible sur demande, sinon vous les laissez</td>
+            </tr>
+            <tr>
+              <td>Chantier</td>
+              <td>Autonome, n'écoute plus la théorie</td>
+              <td>Un P au choix, 25 à 40 min</td>
+              <td>Ne l'interrompez pas. Demandez-lui deux minutes de présentation à la mise en commun</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="highlight highlight-info"><strong>Pourquoi ça tient</strong>Les trois pistes travaillent les mêmes mécanismes à des profondeurs différentes. À la mise en commun, tout le monde peut donc parler de la même chose, même si personne n'a fait le même exercice.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Scénario B — Les binômes croisés <span style="color:var(--muted);font-weight:400">(45 min)</span></h3>
+      <p>À utiliser quand vous avez à la fois des utilisateurs ChatGPT et des utilisateurs Claude. Le format le plus vivant, et celui qui fait le mieux tomber l'idée qu'il y aurait un bon outil et un mauvais.</p>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div><strong>Constituez les binômes</strong>Un ChatGPT + un Claude par table. Si quelqu'un n'a rien, il devient l'observateur du binôme et tient les notes — présentez-le comme un rôle, la fiche D3 le fait aussi.</div></div>
+        <div class="step"><div class="step-num">2</div><div><strong>15 min · D3 — Deux outils face à face</strong>Même consigne dans les deux outils, comparaison ligne par ligne.</div></div>
+        <div class="step"><div class="step-num">3</div><div><strong>15 min · C3 — Le juge, en croisé</strong>Chacun fait juger la production de l'autre outil par le sien. Effet garanti.</div></div>
+        <div class="step"><div class="step-num">4</div><div><strong>15 min · Mise en commun à deux voix</strong>Chaque binôme dit une différence constatée. Vous les regroupez au tableau en « différences de ton » et « différences de fond ».</div></div>
+      </div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Scénario C — L'atelier permanence <span style="color:var(--muted);font-weight:400">(90 min, sans théorie)</span></h3>
+      <p>Pour un deuxième ou troisième passage avec un groupe déjà initié. Aucune présentation : on entre, on travaille.</p>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div><strong>Chacun choisit un chantier</strong>Un P1 à P5, ou un vrai projet à lui — à condition qu'il ne contienne aucune donnée interne. Vérifiez ce point vous-même, ne le supposez pas.</div></div>
+        <div class="step"><div class="step-num">2</div><div><strong>Vous tenez une permanence</strong>Dix minutes par personne, à sa place, sur son écran. Ceux qui attendent continuent d'avancer : ils ne perdent pas leur temps.</div></div>
+        <div class="step"><div class="step-num">3</div><div><strong>Les 20 dernières minutes : la revue</strong>Trois volontaires montrent leur écran. On regarde ce qui a coincé, pas ce qui est réussi.</div></div>
+      </div>
+      <div class="highlight highlight-ok"><strong>Le format le plus rentable en temps d'animation</strong>Vous ne préparez rien : les fiches sont la préparation. Et une permanence de 90 minutes règle plus de cas individuels que six séances théoriques.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Les cinq règles à annoncer au début</h3>
+      <p>Elles sont écrites sur la page <a href="exercices.html#regles" style="color:#a5b4fc">Règles</a> de la présentation : affichez-la et lisez-les, cela prend deux minutes et évite dix minutes de rattrapage.</p>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div><strong>Interdiction d'accepter la première réponse</strong>À laisser au tableau toute la séance.</div></div>
+        <div class="step"><div class="step-num">2</div><div><strong>Une conversation neuve par exercice</strong>C'est la règle la plus souvent oubliée, et celle qui fausse le plus les constats. Rappelez-la avant chaque exercice.</div></div>
+        <div class="step"><div class="step-num">3</div><div><strong>Trois lignes écrites par exercice</strong>Sans écriture, il ne reste rien le lendemain. C'est non négociable, même si cela agace.</div></div>
+        <div class="step"><div class="step-num">4</div><div><strong>Rien d'interne dans la machine</strong>Le seul point sur lequel vous devez être intransigeant. Voir la <a href="index.html#lecon-34" style="color:#a5b4fc">leçon 34</a>.</div></div>
+        <div class="step"><div class="step-num">5</div><div><strong>Un échec est un résultat</strong>À dire au début, pas à la fin : cela retire l'enjeu de performance pour toute la séance.</div></div>
+      </div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Ce qui fait rater une séance</h3>
+      <div class="example-list">
+        <div class="example"><strong>Vouloir couvrir trois leçons avant les exercices</strong><span>Au bout de trente minutes de théorie, la salle est passive et les exercices tombent à plat. Un sujet par séance suffit.</span></div>
+        <div class="example"><strong>Laisser un cas personnel prendre le groupe en otage</strong><span>C'est précisément le problème que les exercices résolvent : « garde ta question, je viens te voir dans dix minutes ». Et vous y allez vraiment, sinon la promesse ne tient plus.</span></div>
+        <div class="example"><strong>Choisir un exercice métier « pour que ce soit plus utile »</strong><span>Le débat part immédiatement sur le fond du métier et le mécanisme est perdu. C'est la tentation la plus fréquente et la plus coûteuse.</span></div>
+        <div class="example"><strong>Ne pas vérifier les accès avant</strong><span>Comptes non ouverts, mots de passe oubliés : cinq minutes perdues par personne. À régler la veille.</span></div>
+        <div class="example"><strong>Révéler trop tôt</strong><span>Si vous projetez le bas d'une fiche avant qu'ils aient travaillé, l'exercice ne sert plus à rien. E1, E2 et T1 sont les plus sensibles.</span></div>
+        <div class="example"><strong>Terminer sans faire écrire</strong><span>Une séance sans les trois lignes est une séance agréable dont il ne restera rien.</span></div>
+      </div>
+      <div class="highlight highlight-key"><strong>Si vous n'avez qu'un quart d'heure</strong>Faites D1, et rien d'autre. C'est le meilleur rapport temps investi sur prise de conscience de tout le lot.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== PROFILS ========== -->
+<section class="page" id="profils">
+  <div class="lesson-header">
+    <div>
+      <div class="tag tag-staff">● Animation — Profils</div>
+      <h2>Cinq profils dans la même salle</h2>
+    </div>
+    <a class="btn btn-secondary" href="#accueil">↩ Retour</a>
+  </div>
+  <div class="lesson-grid">
+
+    <div class="card lesson-card full-card">
+      <p>Ces cinq profils ne sont pas des niveaux techniques mais des rapports différents à l'outil. Le débutant motivé est plus facile à former que l'utilisateur quotidien qui n'a jamais remis en cause ce qu'il obtient. Repérez le profil avant de choisir la fiche.</p>
+      <div class="highlight highlight-warn"><strong>Un point de méthode</strong>Ces catégories sont un outil d'animation, pas une grille d'évaluation, et elles ne sortent pas de cette page. Rien de tout cela n'apparaît dans la présentation, et il n'y a aucune raison de dire à quelqu'un dans quelle case vous l'avez mis.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>1 · Sans abonnement</h3>
+      <p><em>« Je n'ai que la version gratuite. »</em></p>
+      <div class="highlight highlight-ok"><strong>21 des 26 exercices lui sont accessibles</strong>Ce qui manque dans les versions gratuites, ce n'est pas l'intelligence du modèle : c'est le volume d'usage et quelques fonctions de confort. Le raisonnement, la lecture de texte collé, les images et les artefacts sont là.</div>
+      <h4>À lui donner</h4>
+      <p>D1 · D2 · D4 · E1 · E2 · E3 · E4 · E5 · T1 · T2 · T4 · C1 · C2 · C3 · C4 · P1 · P2 · P4 · P5 · R2</p>
+      <h4>À éviter</h4>
+      <p>R3 et R4 (projets et tâches programmées), et T3 sur un document volumineux — sauf en collant le texte par morceaux.</p>
+      <div class="highlight highlight-info"><strong>Ce qu'il faut lui dire</strong>Qu'il ne s'agit pas d'un rabais pédagogique : il fera les mêmes constats que les autres, et il saura ensuite si un abonnement vaut la peine — ce qui est la bonne façon de décider.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>2 · Le réticent</h3>
+      <p><em>« Je n'ai pas le temps », « ça ne sert à rien dans mon métier », « je préfère le faire moi-même ».</em></p>
+      <div class="highlight highlight-warn"><strong>Ne commencez ni par la théorie, ni par son métier</strong>Les deux confirment ce qu'il pense déjà. Commencez par un usage personnel où le gain est immédiat, puis par les limites de l'outil — un réticent adhère beaucoup mieux quand on lui montre d'abord ce que l'IA fait mal.</div>
+      <h4>Dans cet ordre</h4>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div><strong>R2 — Parler au lieu d'écrire</strong>Lève l'objection du temps en dix minutes : il n'a plus à taper.</div></div>
+        <div class="step"><div class="step-num">2</div><div><strong>P1 — Quatre jours à Lisbonne</strong>Un gain personnel, visible, sans rapport avec le travail. C'est l'exercice qui fait revenir les gens.</div></div>
+        <div class="step"><div class="step-num">3</div><div><strong>E1 — La chasse à l'hallucination</strong>Il aura raison, et il le verra. C'est souvent là qu'il commence à s'intéresser vraiment.</div></div>
+        <div class="step"><div class="step-num">4</div><div><strong>C1 — L'interrogatoire inversé</strong>Répond à son objection réelle : « je ne sais pas quoi lui demander ».</div></div>
+      </div>
+      <h4>À éviter</h4>
+      <p>R1, R3, P3 : du réglage et du tableur, c'est-à-dire du travail supplémentaire avant le bénéfice.</p>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>3 · Le prudent</h3>
+      <p><em>« Et la confidentialité ? », « on a le droit ? », « je ne mets rien là-dedans ».</em></p>
+      <div class="highlight highlight-ok"><strong>Sa prudence est un atout</strong>Confiez-lui un rôle : vérificateur officiel des mises en commun. C'est lui qui demande « où as-tu vérifié ? » quand quelqu'un présente un résultat. Il devient l'allié de la séance au lieu d'en être le sceptique.</div>
+      <h4>À lui donner</h4>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div><strong>E1 et E4</strong>Il cherche déjà la faille : autant lui donner les exercices faits pour ça.</div></div>
+        <div class="step"><div class="step-num">2</div><div><strong>T3 — Le document interrogé</strong>Avec un document public ou personnel uniquement. La consigne « cite la phrase exacte » répond directement à son inquiétude.</div></div>
+        <div class="step"><div class="step-num">3</div><div><strong>Les leçons <a href="index.html#lecon-33" style="color:#a5b4fc">33</a> et <a href="index.html#lecon-34" style="color:#a5b4fc">34</a></strong>À lui faire lire pendant que les autres font un chantier. Il en ressortira avec des questions utiles à tout le groupe.</div></div>
+      </div>
+      <div class="highlight highlight-info"><strong>Le piège</strong>Ne lui répondez pas « il n'y a pas de risque ». Il y en a, et il le sait. Répondez : voici ce qui ne sort pas d'ici, et voici tout ce qu'on peut faire sans que ça sorte.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>4 · Le curieux régulier</h3>
+      <p><em>Il l'utilise déjà tous les jours, sans méthode, et il est content de ses résultats — c'est justement le problème.</em></p>
+      <div class="highlight highlight-key"><strong>Ce qu'il faut travailler avec lui</strong>Il obtient des réponses acceptables, donc il ne vérifie plus et n'itère plus. Il ne progressera pas en apprenant des fonctions, mais en découvrant que ce qu'il accepte est un brouillon.</div>
+      <h4>À lui donner en priorité</h4>
+      <div class="example-list">
+        <div class="example"><strong>E3 — Le détecteur de flatterie</strong><span>Lui fait comprendre que l'outil l'approuve par construction, pas par jugement.</span></div>
+        <div class="example"><strong>E5 — Le téléphone arabe</strong><span>Lui montre ce qu'il a perdu sans le savoir dans tous les résumés qu'il a acceptés.</span></div>
+        <div class="example"><strong>C3 — Le juge</strong><span>La production qu'il trouvait bonne notée 6 sur 10 par une conversation neuve : c'est le déclic.</span></div>
+        <div class="example"><strong>C2 — La règle des cinq tours</strong><span>La méthode qui lui manque, en quinze minutes.</span></div>
+        <div class="example"><strong>R1 — Les instructions permanentes</strong><span>Il répète le même contexte dix fois par jour sans s'en rendre compte.</span></div>
+      </div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>5 · L'autonome</h3>
+      <p><em>Il en sait autant que vous sur certains points, et il s'ennuie pendant la théorie.</em></p>
+      <div class="highlight highlight-ok"><strong>Transformez-le en relais</strong>Donnez-lui un chantier long, laissez-le tranquille, puis demandez-lui deux minutes de présentation à la mise en commun. Il aura le rôle qu'il cherchait, et le groupe écoutera un pair plus volontiers que l'animateur.</div>
+      <h4>À lui donner</h4>
+      <p>C4 (prompt reconstitué) · P2 (mini-application) · P3 (tableur) · P4 (décision pondérée) · R3 (contexte persistant) · R4 (tâche programmée)</p>
+      <div class="highlight highlight-warn"><strong>Le seul point de vigilance</strong>Ne le laissez pas répondre à la place des autres pendant les exercices : il donne la solution et il enlève la découverte. Dites-le-lui explicitement, en lui confiant en échange le rôle de présentateur.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== RÉPONSES D ========== -->
+<section class="page" id="rep-d">
+  <div class="lesson-header">
+    <div>
+      <div class="tag tag-f1">● Réponses — Famille D, les duels</div>
+      <h2>Ce qu'il faut faire ressortir</h2>
+    </div>
+    <a class="btn btn-secondary" href="#accueil">↩ Retour</a>
+  </div>
+  <div class="meta">
+    <span class="pill">Mécanisme visé : <strong>le résultat dépend de la demande</strong></span>
+    <span class="pill">4 exercices · 6 à 12 min</span>
+    <span class="pill"><a href="exercices.html#d1">Voir les fiches ›</a></span>
+  </div>
+  <div class="lesson-grid">
+
+    <div class="card lesson-card">
+      <h3>D1 — Le prompt nu contre le prompt habillé</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Le mail 1 invente entre trois et six informations</strong><span>Ordre du jour, lieu, durée, nom d'entreprise, signature, parfois un nom de destinataire. Faites-les compter à voix haute : le chiffre est plus parlant que le commentaire.</span></div>
+        <div class="example"><strong>Le mail 1 est souvent plus long que le mail 2</strong><span>Alors qu'il en sait six fois moins. C'est le constat qui fait le plus d'effet.</span></div>
+        <div class="example"><strong>La liste des manques du mail 2</strong><span>Contient presque toujours une question que le participant ne s'était pas posée. Demandez-en une à voix haute.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation</strong>Ne commentez pas la qualité littéraire des deux mails. La salle va vouloir dire lequel est « mieux écrit » : ce n'est pas la question. Ramenez systématiquement au comptage de ce qui a été inventé.</div>
+      <div class="highlight highlight-info"><strong>Ce qu'on écrit au tableau</strong>« Dis le contexte, sinon il l'invente. »</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>D2 — Trois personas, une question</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Les trois versions disent souvent la même chose</strong><span>Ce sont les mots et la longueur qui bougent, pas le fond. Faites-le remarquer : cela évite de croire que « expliquer simplement » change le contenu.</span></div>
+        <div class="example"><strong>La version enfant contient une approximation devenue fausse</strong><span>Le tour 3 la sort. Selon les outils, il s'agit de la lumière « qui rebondit », du bleu « du ciel » plutôt que de la diffusion, ou de l'omission de la longueur d'onde. Peu importe laquelle : ce qui compte est qu'il y en ait une.</span></div>
+        <div class="example"><strong>Le rôle « professeur tatillon » ajoute des nuances</strong><span>Parce que le rôle autorise l'incertitude, pas parce qu'il en sait plus.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation</strong>Un participant qui connaît la physique va vouloir débattre du fond. Coupez : la question n'est pas de savoir pourquoi le ciel est bleu, mais ce que la simplification a coûté.</div>
+      <div class="highlight highlight-info"><strong>Ce qu'on écrit au tableau</strong>« Simplifier a un coût, et il n'est pas signalé. »</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>D3 — Deux outils face à face</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Le haut du classement se ressemble, le bas diverge</strong><span>La marche guidée et l'atelier cuisine remontent souvent ; le karting descend à cause du budget. Mais l'ordre exact varie d'un outil à l'autre et d'un jour à l'autre.</span></div>
+        <div class="example"><strong>Au moins un des deux invente un prix</strong><span>Aucun ne connaît le tarif réel d'un karting près de Namur. C'est le point de comparaison le plus utile de l'exercice : faites-le pointer.</span></div>
+        <div class="example"><strong>La contrainte des trente personnes est souvent lue mais pas traitée</strong><span>Un escape game pour trente, c'est plusieurs sessions. Si aucun des deux ne le signale, c'est un excellent constat à faire ressortir.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation</strong>Ne laissez pas la séance devenir un match ChatGPT contre Claude. Les utilisateurs deviennent partisans très vite. Reformulez chaque intervention en « sur quoi diffèrent-ils » et « qu'est-ce que cela m'apprend à vérifier ».</div>
+      <div class="highlight highlight-info"><strong>Ce qu'on écrit au tableau</strong>« Deux outils qui divergent = ma liste de points à vérifier. »</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>D4 — L'escalier des contraintes</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Le palier de rupture est entre 50 et 12 mots</strong><span>À 200 et 50 mots on perd du détail ; à 12 on perd les exceptions, et le texte devient faux tout en restant lisible.</span></div>
+        <div class="example"><strong>Les trois exceptions du règlement M4</strong><span>L'adhésion familiale qui n'est <em>pas</em> réduite de moitié après le 1er octobre · le dimanche exclu de la fermeture à 23h en été · la raison médicale qui dispense du préavis de 48 heures. Ayez-les en tête, ce sont elles qui font l'exercice.</span></div>
+        <div class="example"><strong>Le tour 5 est souvent juste</strong><span>L'outil désigne correctement le palier. Faites remarquer qu'il ne l'a dit qu'une fois interrogé.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation</strong>Certains vont trouver le résumé en 4 mots « rigolo » et s'arrêter là. Le contenu de l'exercice est au tour 5, pas dans les quatre premiers : réservez-vous du temps pour lui.</div>
+      <div class="highlight highlight-info"><strong>Ce qu'on écrit au tableau</strong>« Résume en 100 mots, et liste ce que tu as dû écarter. »</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== RÉPONSES E ========== -->
+<section class="page" id="rep-e">
+  <div class="lesson-header">
+    <div>
+      <div class="tag tag-f2">● Réponses — Famille E, les enquêtes</div>
+      <h2>Ce qu'il faut faire ressortir</h2>
+    </div>
+    <a class="btn btn-secondary" href="#accueil">↩ Retour</a>
+  </div>
+  <div class="meta">
+    <span class="pill">Mécanisme visé : <strong>l'assurance n'est pas la fiabilité</strong></span>
+    <span class="pill">5 exercices · 6 à 12 min</span>
+    <span class="pill"><a href="exercices.html#e1">Voir les fiches ›</a></span>
+  </div>
+  <div class="lesson-grid">
+
+    <div class="card lesson-card full-card">
+      <div class="highlight highlight-key"><strong>La famille à placer tôt dans la séance</strong>Idéalement en deuxième position, juste après D1. Ces exercices installent le réflexe de vérification <em>avant</em> que l'habitude de confiance ne s'installe. Une séance qui commence par les transformations et finit par les enquêtes rate son effet.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>E1 — La chasse à l'hallucination</h3>
+      <h4>Les réponses</h4>
+      <div class="example-list">
+        <div class="example"><strong>Aucun des trois n'existe</strong><span>Ni le roman « Les Jardins de verre », ni Camille Ardennes, ni la commune de Havelange-sur-Meuse, ni la convention de Ravensburg. Tout a été inventé pour l'exercice.</span></div>
+        <div class="example"><strong>Le comportement varie selon la question</strong><span>Le roman donne souvent un résumé complet. La commune passe parfois par « je ne trouve pas ». L'article de convention est le plus dangereux : la réponse a l'air juridique.</span></div>
+        <div class="example"><strong>La rétractation est quasi systématique</strong><span>Dès qu'on demande « est-ce que cela existe ? ». Faites-en le point central : il avait l'information, il ne l'a pas utilisée sans qu'on la demande.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation</strong>Le risque est de conclure « l'IA raconte n'importe quoi », ce qui est faux et fait perdre la confiance utile. La bonne conclusion est : le mécanisme qui produit vos bons résultats est le même que celui qui produit celui-ci. Il n'y a pas un mode fiable et un mode défaillant.</div>
+      <div class="highlight highlight-info"><strong>Variez d'une séance à l'autre</strong>Les modèles évoluent et finissent par reconnaître les faux célèbres. Inventez vos propres titres : un nom d'auteur plausible, une année, un pays. Testez-les la veille.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>E2 — Le piège du calcul</h3>
+      <h4>Les réponses</h4>
+      <div class="example-list">
+        <div class="example"><strong>Le stylo coûte 0,50 EUR</strong><span>Le piège fait répondre 1 EUR. Vérification : 0,50 + 10,50 = 11 et 10,50 − 0,50 = 10.</span></div>
+        <div class="example"><strong>Le second calcul donne 212,05 EUR</strong><span>3 × 17,45 = 52,35 ; 2 × 8,90 = 17,80 ; total 199,15. Remise 12 % → 175,25. TVA 21 % → 212,05 EUR. Erreurs fréquentes : TVA appliquée avant la remise, ou arrondi en cours de route.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>À faire la veille, ou le matin même</strong>Refaites les deux questions vous-même. Les modèles changent, et il arrive que les deux réponses soient justes du premier coup — auquel cas l'exercice bascule sur la comparaison entre le mode « sans expliquer » et le mode « avec les étapes », qui reste concluant.</div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation</strong>Ne concluez jamais « l'IA ne sait pas compter » : c'est faux et cela dévalorise l'outil à tort. Concluez « elle ne calcule pas, elle rédige — sauf si on lui demande de calculer ». Toute la leçon est dans cette nuance, et la fiche le dit aussi.</div>
+      <div class="highlight highlight-info"><strong>Ce qu'on écrit au tableau</strong>« Exige les étapes, ou l'outil de calcul. Puis vérifie une ligne. »</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>E3 — Le détecteur de flatterie</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>La réponse 1 commence par un compliment</strong><span>« C'est une belle intention », « l'idée de créer du lien est excellente ». Faites-le lire mot pour mot par un participant : c'est plus fort que de le résumer.</span></div>
+        <div class="example"><strong>Les cinq risques réels du plan M3</strong><span>Bruit dans un espace partagé · personnes en concentration · conflits de goûts musicaux · absence de règle assumée qui reporte l'arbitrage sur les collègues · lancement par surprise sans consultation, qui est le plus grave et le plus souvent manqué au tour 1.</span></div>
+        <div class="example"><strong>Le chiffre du tour 3 est de trois ou quatre sur cinq</strong><span>C'est le chiffre à écrire au tableau : quatre problèmes majeurs qu'il connaissait et n'a pas dits.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation</strong>Si vous faites soumettre leurs vraies idées, cela devient inconfortable pour certains — et le groupe se met à juger l'idée au lieu d'observer l'outil. Restez sur le plan fictif en séance, et proposez la variante personnelle comme prolongement à faire seul.</div>
+      <div class="highlight highlight-info"><strong>Ce qu'on écrit au tableau</strong>« Demande la critique, elle ne vient pas seule. Et interdis le positif. »</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>E4 — L'affirmation piégée</h3>
+      <h4>Les réponses</h4>
+      <div class="example-list">
+        <div class="example"><strong>Le Mont Blanc culmine à environ 4 800 mètres</strong><span>Le chiffre exact varie de quelques mètres selon les relevés et l'enneigement du sommet. 3 810 est faux de près de mille mètres.</span></div>
+        <div class="example"><strong>Sur ce fait, il cède rarement</strong><span>Trop célèbre. L'exercice est concluant surtout par le contraste entre le tour 1 (« confirme-moi ») et le tour 3 (question neutre).</span></div>
+        <div class="example"><strong>La variante qui marche mieux</strong><span>« Confirme-moi que le délai de rétractation d'un achat en ligne est de sept jours en Belgique » — il est de quatorze jours. Là, il cède beaucoup plus souvent. Gardez-la sous la main si le Mont Blanc ne donne rien.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation</strong>C'est le seul exercice qui peut « ne pas marcher » : si l'outil corrige franchement dès le tour 1, la salle conclut qu'il n'y a pas de problème. Enchaînez alors immédiatement sur la variante du délai de rétractation, et sur les trois formulations de la même question.</div>
+      <div class="highlight highlight-info"><strong>Ce qu'on écrit au tableau</strong>« Ne mets pas la réponse dans la question. »</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>E5 — Le téléphone arabe</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Une version reconstituée crédible et fausse</strong><span>Forme d'un règlement, montants ronds, horaires plausibles, conditions inventées. Aucun de ces détails ne vient du texte d'origine.</span></div>
+        <div class="example"><strong>Les trois exceptions ont disparu</strong><span>Les mêmes que dans D4 : adhésion familiale, dimanche d'été, raison médicale. Un résumé garde les règles et perd les cas particuliers — c'est-à-dire ce pour quoi on consulte un règlement.</span></div>
+        <div class="example"><strong>Le tableau final est le livrable</strong><span>Trois colonnes : inventé, perdu, déformé. Faites-le garder, c'est une grille réutilisable.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation</strong>Beaucoup vont enchaîner les deux étapes dans la même conversation, ce qui annule tout l'exercice : la seconde a alors accès au texte d'origine. Vérifiez-le en circulant, c'est l'erreur la plus fréquente de toute la série.</div>
+      <div class="highlight highlight-info"><strong>Ce qu'on écrit au tableau</strong>« Un résumé n'est pas compressé, il est appauvri. Garde la source. »</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== RÉPONSES T ========== -->
+<section class="page" id="rep-t">
+  <div class="lesson-header">
+    <div>
+      <div class="tag tag-f3">● Réponses — Famille T, les transformations</div>
+      <h2>Ce qu'il faut faire ressortir</h2>
+    </div>
+    <a class="btn btn-secondary" href="#accueil">↩ Retour</a>
+  </div>
+  <div class="meta">
+    <span class="pill">Mécanisme visé : <strong>apportez la matière</strong></span>
+    <span class="pill">4 exercices · 10 à 15 min</span>
+    <span class="pill"><a href="exercices.html#t1">Voir les fiches ›</a></span>
+  </div>
+  <div class="lesson-grid">
+
+    <div class="card lesson-card full-card">
+      <div class="highlight highlight-ok"><strong>La famille qui termine bien une séance</strong>Elle produit des réussites visibles, après deux familles qui montrent les limites. Placez-la en fin de séance : on ne renvoie pas les gens chez eux sur un constat d'échec.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>T1 — Du désordre au tableau</h3>
+      <h4>Les cinq pièges du bloc M1</h4>
+      <div class="example-list">
+        <div class="example"><strong>Marie Dupont apparaît deux fois</strong><span>Lignes 1 et 5, avec deux écritures de téléphone. Il n'y a donc que cinq personnes réelles, pas six.</span></div>
+        <div class="example"><strong>Karim Mertens n'a versé que 20 EUR</strong><span>C'est un acompte, pas un paiement. Un tableau qui affiche « 20 EUR » sans mention a perdu l'information.</span></div>
+        <div class="example"><strong>La dernière ligne n'a ni nom ni date exacte</strong><span>Inventer un nom ou supprimer la ligne sont deux erreurs opposées, aussi graves l'une que l'autre.</span></div>
+        <div class="example"><strong>Sofia Renard a un numéro fixe (081)</strong><span>Le format mobile imposé ne lui convient pas. A-t-il signalé ou maquillé ?</span></div>
+        <div class="example"><strong>Karim Mertens : prénom entre parenthèses</strong><span>« K. Mertens (Karim) ». Petit piège de découpage nom / prénom.</span></div>
+      </div>
+      <div class="highlight highlight-key"><strong>Le constat central</strong>Le tableau du tour 1 est presque toujours parfaitement propre, sans aucune anomalie signalée. Faites-le dire à voix haute : « combien d'entre vous ont eu un tableau qui signalait quelque chose ? » Souvent personne. C'est le cœur de l'exercice.</div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation</strong>C'est l'exercice où l'on obtient le plus vite un résultat satisfaisant, donc celui où l'on s'arrête le plus vite. Ne laissez personne sauter le tour 2 : sans lui, la leçon est exactement inverse de celle visée.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>T2 — Un texte, quatre registres</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Les trois reproches de l'original</strong><span>Décisions manquantes · deux noms faux · aucune répartition des tâches ni échéance. Ayez-les en tête pour arbitrer les comptages.</span></div>
+        <div class="example"><strong>Le fond est adouci malgré la consigne</strong><span>« Deux noms sont faux » devient « quelques imprécisions dans les noms ». C'est le constat central : une consigne explicite ne garantit pas son application, il faut vérifier.</span></div>
+        <div class="example"><strong>La version 3 (trois lignes) perd le plus</strong><span>Et la version téléphone est la plus différente structurellement.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation</strong>La salle va vouloir débattre du bien-fondé du reproche, et raconter des histoires de comptes rendus mal faits. Coupez court : le mail est fictif, la question est ce que la réécriture a fait au contenu.</div>
+      <div class="highlight highlight-info"><strong>Ce qu'on écrit au tableau</strong>« Le ton est un paramètre — mais vérifie ce que la politesse a emporté. »</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>T3 — Le document interrogé</h3>
+      <h4>Ce qu'il faut obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Au moins un « pas trouvé » au dernier tour</strong><span>Ce sont les points affirmés sans base dans le document. Cela arrive presque toujours. Si personne n'en a, faites poser la question piège.</span></div>
+        <div class="example"><strong>La question des exclusions est la plus productive</strong><span>Un résumé raconte ce que le document prévoit ; ce qui coûte cher, c'est ce qu'il exclut. Personne ne pense à le demander.</span></div>
+        <div class="example"><strong>Faites vérifier deux citations en direct</strong><span>Recherche du navigateur, dix secondes. C'est le geste à installer, et il ne s'installe qu'en le faisant.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le point de vigilance le plus important de la série</strong>C'est l'exercice où quelqu'un va joindre un document interne « parce que c'est plus pratique ». Annoncez la contrainte avant de lancer l'exercice, et regardez les écrans en circulant. Un contrat du Resort, une fiche de paie ou un compte rendu de réunion : non, même anonymisé.</div>
+      <div class="highlight highlight-info"><strong>Documents qui marchent bien</strong>Notice de médicament · contrat d'assurance habitation · conditions d'un abonnement téléphonique · bail · règlement d'un club · mode d'emploi d'un appareil. À défaut, le bloc M4.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>T4 — L'image lue</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Une lecture de l'écriture manuscrite meilleure qu'attendu</strong><span>C'est le petit choc de l'exercice, surtout chez ceux qui pensaient que ces outils se limitent au texte tapé.</span></div>
+        <div class="example"><strong>Une ou deux erreurs sur les chiffres</strong><span>Un 3 lu 8, une virgule déplacée, une colonne décalée. Faites vérifier caractère par caractère : sans vérification, personne ne les voit.</span></div>
+        <div class="example"><strong>Souvent aucun crochet</strong><span>Même sur une écriture difficile. C'est le signal : il a tranché sans le dire.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation, et il est sérieux</strong>Le premier réflexe des participants est de photographier ce qu'ils ont sous la main : un écran de travail, un document sur le bureau, le tableau blanc de la salle. Dites explicitement quoi photographier avant de lancer l'exercice, et faites-le choisir dans une liste : un ticket de caisse, une étiquette, une page de journal, une note personnelle.</div>
+      <div class="highlight highlight-info"><strong>Bonne fin de séance</strong>Photographier le tableau de la séance en cours et demander le compte rendu. Démonstration immédiate d'un usage réutilisable — à condition que le tableau ne contienne rien de sensible.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== RÉPONSES C ========== -->
+<section class="page" id="rep-c">
+  <div class="lesson-header">
+    <div>
+      <div class="tag tag-f4">● Réponses — Famille C, les conversations</div>
+      <h2>Ce qu'il faut faire ressortir</h2>
+    </div>
+    <a class="btn btn-secondary" href="#accueil">↩ Retour</a>
+  </div>
+  <div class="meta">
+    <span class="pill">Mécanisme visé : <strong>la première réponse est un brouillon</strong></span>
+    <span class="pill">4 exercices · 12 à 15 min</span>
+    <span class="pill"><a href="exercices.html#c1">Voir les fiches ›</a></span>
+  </div>
+  <div class="lesson-grid">
+
+    <div class="card lesson-card">
+      <h3>C1 — L'interrogatoire inversé</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Des questions pertinentes</strong><span>Budget, contraintes alimentaires, équipement de cuisine, enfants ou non, heure, places assises, qui aide à ranger. Souvent une ou deux auxquelles personne n'avait pensé — c'est là qu'il faut faire parler.</span></div>
+        <div class="example"><strong>Il repart en mode proposition au bout de deux ou trois questions</strong><span>Systématique sur certains outils. Le recadrage fonctionne : faites-le faire plutôt que de le dire. C'est un apprentissage en soi — tenir une consigne dans le temps demande de la rappeler.</span></div>
+        <div class="example"><strong>La consigne reconstituée du dernier tour est le vrai livrable</strong><span>Faites-la lire à voix haute par quelqu'un. Elle est toujours meilleure que ce que la salle aurait écrit.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation</strong>Certains vont prendre un sujet professionnel « pour que ce soit utile » et donner du contexte interne au fil des réponses. Imposez un sujet personnel : c'est l'exercice où l'on parle le plus, donc celui où l'on se surveille le moins.</div>
+      <div class="highlight highlight-info"><strong>Ce qu'on écrit au tableau</strong>« Ne me réponds pas tout de suite : pose-moi tes questions. »</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>C2 — La règle des cinq tours</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Le texte devient utilisable au tour 3 ou 4</strong><span>Presque jamais au tour 1. Faites lever la main : « qui a trouvé sa version au premier tour ? » Personne, ou une personne qui n'a pas comparé.</span></div>
+        <div class="example"><strong>« Deux fois plus court » est la consigne au meilleur rendement</strong><span>De toute la série. Quatre mots. Insistez : c'est ce qu'ils utiliseront le plus souvent après la séance.</span></div>
+        <div class="example"><strong>Le tour 3 fait disparaître beaucoup de lignes</strong><span>Faites compter. La quantité de phrases qui ne disaient rien dans la version initiale surprend toujours.</span></div>
+        <div class="example"><strong>Le tour 5 : il voit ses propres défauts</strong><span>Bien, et honnêtement. À condition qu'on le demande.</span></div>
+      </div>
+      <div class="highlight highlight-ok"><strong>Le meilleur exercice à conduire en collectif</strong>Menez les cinq tours au projecteur avec un texte proposé par la salle, puis laissez chacun refaire sur son propre sujet. C'est le seul de la série qui gagne à être fait deux fois — une fois ensemble, une fois seul.</div>
+      <div class="highlight highlight-info"><strong>Ce qu'on écrit au tableau</strong>« Interdiction d'accepter la première réponse. » Si une seule ligne devait rester de toute la formation, c'est celle-là.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>C3 — Le juge</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Une note de 6 ou 7 sur 10</strong><span>Pour un texte que le participant trouvait très bon. C'est le déclic de l'exercice. Demandez-leur d'avoir noté le texte eux-mêmes avant : l'écart est plus parlant que la note.</span></div>
+        <div class="example"><strong>Un point manquant que personne n'avait vu</strong><span>Presque toujours. La conversation neuve n'a pas le contexte de la demande d'origine, donc elle voit ce qui manque à un lecteur qui n'était pas là — c'est-à-dire au vrai destinataire.</span></div>
+        <div class="example"><strong>L'auteur d'origine accepte la critique trop facilement</strong><span>Au dernier tour. Cela rejoint E3 : profitez-en pour relier les deux exercices.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation</strong>Deux personnes vont comparer leurs notes et le vivre comme une évaluation d'elles-mêmes. Rappelez que ce qui est noté est un texte produit par une machine, pas leur travail. Ne faites jamais comparer deux notes de participants entre elles.</div>
+      <div class="highlight highlight-info"><strong>La meilleure version</strong>En croisé, juste après D3 : ChatGPT juge Claude et inversement. C'est le moment le plus vivant d'une séance en binômes.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>C4 — Le prompt reconstitué</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Une consigne bien meilleure que celles qu'ils écrivent</strong><span>Avec un rôle, un destinataire, une longueur, un format et une interdiction — tout ce qu'on oublie systématiquement.</span></div>
+        <div class="example"><strong>Des paramètres implicites nommés</strong><span>« Ton factuel, sans superlatif », « une seule idée par paragraphe », « pas d'introduction ». Faites-les relever : personne ne pense à écrire cela.</span></div>
+        <div class="example"><strong>Un gabarit qui fonctionne sur un autre sujet</strong><span>C'est la démonstration, et c'est le seul exercice de la série qui produit un livrable à garder définitivement.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation</strong>Le texte de départ. Ils vont naturellement prendre un mail interne bien écrit. Préparez trois textes publics de secours : une annonce immobilière efficace, une fiche produit, un article court d'un site d'information.</div>
+      <div class="highlight highlight-ok"><strong>À donner en priorité à l'autonome</strong>Il est assez avancé pour ne pas l'avoir déjà fait, et le gabarit produit sert ensuite à tout le groupe. Demandez-lui de le présenter à la mise en commun.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== RÉPONSES P ========== -->
+<section class="page" id="rep-p">
+  <div class="lesson-header">
+    <div>
+      <div class="tag tag-f5">● Réponses — Famille P, les chantiers</div>
+      <h2>Ce qu'il faut faire ressortir</h2>
+    </div>
+    <a class="btn btn-secondary" href="#accueil">↩ Retour</a>
+  </div>
+  <div class="meta">
+    <span class="pill">Usage : <strong>occuper en autonomie complète</strong></span>
+    <span class="pill">5 exercices · 20 à 40 min</span>
+    <span class="pill"><a href="exercices.html#p1">Voir les fiches ›</a></span>
+  </div>
+  <div class="lesson-grid">
+
+    <div class="card lesson-card full-card">
+      <div class="highlight highlight-key"><strong>À quoi sert cette famille pour vous</strong>C'est elle qui vous libère. Un chantier occupe une personne 25 à 40 minutes sans qu'elle ait une seule question à vous poser. C'est ce que vous donnez à celui qui n'écoute plus la théorie, et c'est ce qui vous permet de traiter un cas individuel ailleurs dans la salle. Ne les interrompez pas : le contrat est qu'ils travaillent seuls.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>P1 — Quatre jours à Lisbonne</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Le tour 5 fait le travail que personne n'aime faire</strong><span>Rassembler cinq réponses éparses en un document cohérent.</span></div>
+        <div class="example"><strong>Le tour 6 produit une liste de quinze à vingt éléments</strong><span>Prix, horaires, temps de marche, météo : presque tout était estimé. Faites-la compter, c'est le chiffre à retenir.</span></div>
+        <div class="example"><strong>La colonne « pire cas » n'existe que parce qu'on l'a demandée</strong><span>Sans elle : une seule estimation optimiste présentée comme un fait.</span></div>
+      </div>
+      <div class="highlight highlight-ok"><strong>Pourquoi ce sujet et pas un cas métier</strong>Aucun besoin d'expliquer l'énoncé, aucun risque de confidentialité, gain immédiatement visible. Beaucoup de participants refont l'exercice le soir même pour de vrai : c'est le signe qu'il fonctionne, et c'est ce qui les fait revenir.</div>
+      <div class="highlight highlight-info"><strong>Ce qu'on écrit au tableau</strong>« Qu'est-ce que tu as inventé là-dedans, et que je devrais vérifier ? » — la question qui devrait clôturer tout travail sérieux.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>P2 — La mini-application</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Un minuteur qui fonctionne, du premier coup dans la plupart des cas</strong><span>C'est le chantier le plus démonstratif à projeter à la mise en commun.</span></div>
+        <div class="example"><strong>Le tour 3 casse souvent le premier minuteur</strong><span>C'est voulu, et c'est la leçon : une modification à la fois, on vérifie avant la suivante.</span></div>
+        <div class="example"><strong>Ils corrigent en français, pas en code</strong><span>Le constat qui étonne le plus les non-techniciens, et parfois celui qui change leur idée de ce que l'outil peut faire.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le garde-fou à énoncer, même s'ils ne le demandent pas</strong>Ce qui se fabrique en vingt minutes est un outil personnel, pas un outil de service. Dès qu'un outil doit servir à plusieurs personnes ou toucher des données réelles, il passe par le circuit normal. Sinon vous verrez apparaître des petits outils maison dans les services, et c'est vous qu'on viendra voir. Voir la <a href="index.html#lecon-31">leçon 31</a>.</div>
+      <div class="highlight highlight-info"><strong>Si quelqu'un veut son propre outil</strong>Acceptez, c'est le meilleur usage du temps — à condition qu'il n'y mette aucune donnée réelle. Un tirage au sort d'équipes ou un compteur de présences vide fonctionne très bien pour la démonstration.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>P3 — Le tableur repris en main</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Une formule qui marche, si la structure a été donnée</strong><span>La comparaison avec la version « sans structure » est le cœur de l'exercice : la fiche leur demande de faire les deux.</span></div>
+        <div class="example"><strong>Une mauvaise supposition ne renvoie pas d'erreur</strong><span>Elle renvoie un mauvais chiffre. C'est ce point qu'il faut faire ressortir, pas la qualité de la formule.</span></div>
+        <div class="example"><strong>Le tour 3 est le plus rentable au quotidien</strong><span>Faire expliquer une formule héritée. Tout le monde en a une dans un fichier.</span></div>
+      </div>
+      <div class="highlight highlight-key"><strong>Le piège maison à leur transmettre</strong>Une colonne calculée dans un .xlsx peut afficher un ancien résultat si le fichier a été enregistré sans recalcul. Avant de conclure à une erreur de saisie, demander la <strong>formule</strong> de la cellule et pas seulement sa valeur. C'est une cause de faux diagnostic très fréquente, et elle n'a rien à voir avec l'IA.</div>
+      <div class="highlight highlight-warn"><strong>Le point de vigilance</strong>Avec T3, c'est l'exercice où le risque de fichier interne est le plus élevé. Imposez le tableau fictif de T1, ou un fichier strictement personnel, et vérifiez en circulant.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>P4 — La décision pondérée</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Un ou deux critères auxquels ils n'avaient pas pensé</strong><span>C'est la seule chose à retenir de cet exercice. Faites-en dire un par personne à la mise en commun : c'est rapide et concret.</span></div>
+        <div class="example"><strong>Des notes sur 5 partiellement inventées</strong><span>Il ne connaît pas leurs trois options réelles. Le tableau a l'air rigoureux et repose sur des estimations.</span></div>
+        <div class="example"><strong>Un tour 3 souvent excellent</strong><span>Il démonte son propre tableau : l'envie, le risque de regret, l'irréversibilité, le critère éliminatoire qui ne se pondère pas.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le vrai danger de cet exercice</strong>C'est le format le plus trompeur de la série : un tableau chiffré avec un total inspire une confiance qu'un texte n'inspirerait jamais. Si vous ne devez insister que sur un point, c'est celui-là — et c'est pour cela que la fiche impose de demander les critères avant tout classement.</div>
+      <div class="highlight highlight-info"><strong>Transposition au travail</strong>La méthode se transpose à n'importe quelle décision de service. Les données, non. Dites-le explicitement, quelqu'un posera la question.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>P5 — Dix diapositives</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>La comparaison avec la version sans contraintes</strong><span>C'est ce que la fiche leur demande de faire, et c'est tout l'exercice : « six mots maximum » produit des titres utilisables, « fais une présentation » produit des titres décoratifs de douze mots.</span></div>
+        <div class="example"><strong>Deux diapositives gagnées sur dix</strong><span>Grâce à l'interdiction des diapositives « introduction » et « conclusion ». Vingt pour cent de la présentation.</span></div>
+        <div class="example"><strong>Les notes d'orateur et les deux phrases du tour 4</strong><span>Les parties que personne ne prépare jamais, et celles qui servent le plus le jour même.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation</strong>Ils vont vouloir faire produire le fichier PowerPoint plutôt que le plan. Recentrez : recopier dix titres prend cinq minutes, trouver le bon plan prend une heure. C'est sur le plan que l'outil doit travailler.</div>
+      <div class="highlight highlight-info"><strong>Le prolongement le plus demandé</strong>« Quelles sont les cinq questions difficiles que le public va poser ? » Meilleur usage de l'IA en préparation de réunion, et il est déjà sur la fiche.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== RÉPONSES R ========== -->
+<section class="page" id="rep-r">
+  <div class="lesson-header">
+    <div>
+      <div class="tag tag-f6">● Réponses — Famille R, les réglages</div>
+      <h2>Ce qu'il faut faire ressortir</h2>
+    </div>
+    <a class="btn btn-secondary" href="#accueil">↩ Retour</a>
+  </div>
+  <div class="meta">
+    <span class="pill">Mécanisme visé : <strong>ne plus réexpliquer</strong></span>
+    <span class="pill">4 exercices · 10 à 25 min</span>
+    <span class="pill"><a href="exercices.html#r1">Voir les fiches ›</a></span>
+  </div>
+  <div class="lesson-grid">
+
+    <div class="card lesson-card full-card">
+      <div class="highlight highlight-key"><strong>La famille la moins spectaculaire et la plus décisive</strong>Elle ne produit aucun effet de surprise en séance, et c'est pourtant elle qui sépare celui qui essaie l'IA de celui qui s'en sert. Ne la placez jamais en début de séance : sans usage préalable, personne ne comprend pourquoi il faudrait régler quoi que ce soit.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>R1 — Les instructions permanentes</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>La disparition des trois lignes d'introduction</strong><span>« Excellente question ! Voici quelques pistes pour… » Faites recopier ces lignes avant le réglage : sans la trace écrite, l'effet passe inaperçu.</span></div>
+        <div class="example"><strong>Une réponse un tiers plus courte</strong><span>Pour la même information utile.</span></div>
+        <div class="example"><strong>Il commence à poser des questions</strong><span>Grâce à une seule phrase. C'est D1 rendu permanent — reliez explicitement les deux exercices.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le piège d'animation</strong>Ils vont vouloir écrire leurs instructions <em>avant</em> l'étape 1, donc sans point de comparaison. Le « avant / après » est tout l'exercice : imposez l'ordre des quatre étapes.</div>
+      <div class="highlight highlight-warn"><strong>À surveiller</strong>Le texte proposé contient [secteur] et [activité]. Quelqu'un va y mettre le nom du Resort, un nom de service ou un nom de collègue. Ces instructions partent à chaque conversation : rappelez-le au moment de coller.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>R2 — Parler au lieu d'écrire</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Beaucoup plus de contexte qu'en tapant</strong><span>Deux minutes de dictée valent une page tapée, avec des précisions qu'ils n'auraient jamais écrites.</span></div>
+        <div class="example"><strong>Le bloc « mentionné sans être formulé comme une tâche »</strong><span>La partie la plus utile du résultat, et celle qu'il faut faire lire à voix haute.</span></div>
+        <div class="example"><strong>Les répétitions du dernier tour</strong><span>Ce qu'on dit deux fois est ce qui préoccupe le plus. Ce constat fait souvent plus réfléchir que l'exercice.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le problème pratique : le bruit</strong>Dix personnes qui dictent en même temps, c'est inaudible et personne n'arrive à finir. Placez cet exercice en fin de séance, ou envoyez-les dans le couloir et les bureaux voisins. C'est la contrainte matérielle la plus sous-estimée de toute la série.</div>
+      <div class="highlight highlight-warn"><strong>Le risque de confidentialité</strong>On se surveille beaucoup moins en parlant qu'en écrivant. Imposez un contenu personnel — courses, travaux, week-end, club — et pas « ma semaine de travail ». La fiche le dit, répétez-le à l'oral.</div>
+      <div class="highlight highlight-ok"><strong>L'exercice à donner au réticent en premier</strong>Il répond à son objection exacte — « je n'ai pas le temps » — en dix minutes, sans théorie, et sur son propre contenu.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>R3 — Le contexte persistant</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>La disparition des rappels de contexte</strong><span>C'est là que le temps se gagne réellement, et c'est ce qu'il faut leur faire lister.</span></div>
+        <div class="example"><strong>Hors projet, il repropose des choses déjà écartées</strong><span>Le contraste de l'étape 5 est la démonstration la plus claire de l'exercice.</span></div>
+        <div class="example"><strong>La ligne « ce qui est déjà décidé » est la plus utile</strong><span>Sans elle, l'outil rouvre les débats tranchés à chaque conversation. C'est ce qui agace le plus les utilisateurs réguliers, et souvent ce qu'ils n'avaient pas su nommer.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Le point de vigilance</strong>Un projet est un endroit où l'on dépose des fichiers : c'est structurellement l'endroit où la donnée interne arrive. Et contrairement à une conversation, elle y reste. Sujet personnel uniquement, et vérifiez.</div>
+      <div class="highlight highlight-info"><strong>Sans abonnement</strong>La variante par bloc de contexte collé donne un effet très proche. Ne la présentez pas comme un pis-aller : beaucoup d'utilisateurs réguliers travaillent comme cela.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>R4 — La tâche qui revient seule</h3>
+      <h4>Ce qu'ils vont obtenir</h4>
+      <div class="example-list">
+        <div class="example"><strong>Une tâche mal cadrée devient du bruit en trois jours</strong><span>C'est le constat, et il ne s'observe qu'une semaine plus tard. Prévoyez d'y revenir à la séance suivante — c'est le seul exercice à effet différé.</span></div>
+        <div class="example"><strong>Une idée sur trois passe le test d'utilité</strong><span>L'exercice de cadrage vaut plus que la programmation elle-même. C'est pour cela que la variante « à blanc » est concluante même sans la fonction.</span></div>
+        <div class="example"><strong>La consigne « si rien, dis rien » est indispensable</strong><span>Sans elle, l'outil remplit avec du vide.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>La disponibilité de la fonction est incertaine</strong>Elle dépend de l'outil, du plan et de la version de l'application, et elle bouge. Vérifiez sur votre propre compte avant la séance, et prévoyez d'annoncer d'emblée la variante « à blanc » — sinon vous passerez dix minutes à chercher un menu devant tout le monde.</div>
+      <div class="highlight highlight-warn"><strong>Le garde-fou</strong>Automatisation personnelle sur sujet personnel : outillage individuel. Dès que cela touche un processus de service, des données réelles ou plusieurs personnes, circuit normal avant mise en service. Voir les leçons <a href="index.html#lecon-31">31</a> et <a href="index.html#lecon-33">33</a>.</div>
+      <div class="highlight highlight-info"><strong>À réserver aux autonomes</strong>Sans usage régulier préalable, on ne sait pas quoi automatiser et on programme des choses inutiles.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== DÉBRIEF ========== -->
+<section class="page" id="debrief">
+  <div class="lesson-header">
+    <div>
+      <div class="tag tag-staff">● Animation — Mise en commun</div>
+      <h2>Les six mécanismes à faire sortir</h2>
+    </div>
+    <a class="btn btn-secondary" href="#accueil">↩ Retour</a>
+  </div>
+  <div class="lesson-grid">
+
+    <div class="card lesson-card full-card">
+      <p>La mise en commun est la partie qui fait la valeur de la séance. Sans elle, chacun repart avec une anecdote ; avec elle, chacun repart avec une règle. Vous n'avez pas besoin de faire parler tout le monde : trois interventions suffisent, à condition que vous rameniez chacune à un mécanisme et que vous l'écriviez au tableau.</p>
+      <div class="highlight highlight-key"><strong>La seule question de clôture</strong>« Qu'avez-vous appris sur l'outil ? » — et jamais « qu'avez-vous appris sur le sujet ». Si quelqu'un répond en parlant de Lisbonne ou de pétanque, reposez la question telle quelle. La présentation pose la même question sur sa page <a href="exercices.html#retenir" style="color:#a5b4fc">À retenir</a>.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Les six mécanismes</h3>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div><strong>Ce qu'on ne dit pas, l'outil l'invente</strong>Il ne laisse jamais un trou : il le comble par une moyenne. Exercices : D1, T1, C1.</div></div>
+        <div class="step"><div class="step-num">2</div><div><strong>La contrainte fait plus que la politesse</strong>Un format, une longueur, un rôle, une interdiction. Exercices : D2, D4, P5.</div></div>
+        <div class="step"><div class="step-num">3</div><div><strong>L'assurance n'est pas la fiabilité</strong>Le ton est identique qu'il ait raison ou qu'il invente. Exercices : E1, E2, E4.</div></div>
+        <div class="step"><div class="step-num">4</div><div><strong>Il est plus fiable sur la matière fournie que sur celle qu'il doit retrouver</strong>La règle qui devrait guider tous les usages professionnels. Exercices : T1, T3, E5.</div></div>
+        <div class="step"><div class="step-num">5</div><div><strong>La première réponse est un brouillon</strong>Toujours. Exercices : C2, C3, P1.</div></div>
+        <div class="step"><div class="step-num">6</div><div><strong>Il approuve par construction</strong>La critique se commande, et sèchement. Exercices : E3, E4, P4.</div></div>
+      </div>
+      <div class="highlight highlight-ok"><strong>Objectif réaliste par séance</strong>Deux mécanismes bien installés valent mieux que six énoncés. Choisissez lesquels <em>avant</em> la séance, et choisissez les exercices en fonction — pas l'inverse.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Faire parler sans mettre personne en difficulté</h3>
+      <div class="example-list">
+        <div class="example"><strong>Demandez un constat, pas un résultat</strong><span>« Qu'est-ce qui t'a surpris ? » et non « montre ce que tu as obtenu ». Personne ne se sent jugé sur un constat.</span></div>
+        <div class="example"><strong>Faites parler l'échec en premier</strong><span>Commencez par « qui n'a pas obtenu ce qu'il voulait ? ». Cela retire l'enjeu de performance pour tout le reste de la séance.</span></div>
+        <div class="example"><strong>Ne comparez jamais deux participants</strong><span>Comparez deux conversations, deux consignes, deux outils. Jamais deux personnes, et jamais deux notes obtenues en C3.</span></div>
+        <div class="example"><strong>Confiez la synthèse à l'autonome</strong><span>Deux minutes de présentation par un pair valent dix minutes d'animateur, et cela l'occupe utilement.</span></div>
+        <div class="example"><strong>Utilisez le bouton de révélation comme rythme</strong><span>Vous projetez la fiche, vous laissez la salle dire ce qu'elle a constaté, puis vous révélez. L'ordre compte : révéler d'abord tue la discussion.</span></div>
+      </div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Les trois lignes à faire écrire</h3>
+      <p>À la fin de chaque exercice, pas à la fin de la séance. Sur papier ou dans un fichier — l'essentiel est que ce soit écrit de la main du participant, pas dicté par vous.</p>
+      <div class="table-wrap">
+        <table class="compare-table">
+          <thead><tr><th>Ligne</th><th>Ce qu'on écrit</th><th>Pourquoi</th></tr></thead>
+          <tbody>
+            <tr><td>1 · Demandé</td><td>La consigne, en une phrase, telle qu'elle a été formulée</td><td>Fait prendre conscience de ce qui n'avait pas été dit</td></tr>
+            <tr><td>2 · Surpris</td><td>Ce qui n'était pas attendu, en bien ou en mal</td><td>C'est l'endroit où l'apprentissage se produit réellement</td></tr>
+            <tr><td>3 · Retenu</td><td>Une règle réutilisable, formulée à l'impératif</td><td>Transforme l'anecdote en réflexe transposable au métier</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="highlight highlight-info"><strong>Exemple de troisième ligne réussie</strong>« Toujours terminer par : et qu'est-ce que tu as inventé là-dedans ? » — court, à l'impératif, applicable dès le lendemain sur n'importe quel sujet.</div>
+    </div>
+
+    <div class="card lesson-card full-card">
+      <h3>Ce qu'on écrit au tableau, séance après séance</h3>
+      <p>Les mêmes sept lignes reviennent à chaque séance, quel que soit le groupe et quels que soient les exercices choisis. C'est la répétition qui installe le réflexe, pas la nouveauté. Écrivez-les au fur et à mesure qu'elles sortent du groupe — jamais à l'avance.</p>
+      <div class="chips">
+        <span class="chip">Dis le contexte, sinon il l'invente</span>
+        <span class="chip">Contrains le format</span>
+        <span class="chip">Le ton assuré ne prouve rien</span>
+        <span class="chip">Apporte la matière</span>
+        <span class="chip">La première réponse est un brouillon</span>
+        <span class="chip">Demande la critique, elle ne vient pas seule</span>
+        <span class="chip" style="border-color:rgba(239,68,68,0.3);color:#fca5a5">Rien d'interne dans la machine</span>
+      </div>
+      <div class="highlight highlight-key" style="margin-top:20px;"><strong>La septième est celle à répéter le plus souvent</strong>Ce n'est pas un mécanisme d'IA, c'est une règle maison — mais c'est la seule dont l'oubli a des conséquences. Les six premières font gagner du temps ; la septième évite un incident. Voir les leçons <a href="index.html#lecon-33">33</a> et <a href="index.html#lecon-34">34</a>.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== PRÉPARER ========== -->
+<section class="page" id="preparer">
+  <div class="lesson-header">
+    <div>
+      <div class="tag tag-staff">● Animation — Préparer</div>
+      <h2>Trois minutes, la veille</h2>
+    </div>
+    <a class="btn btn-secondary" href="#accueil">↩ Retour</a>
+  </div>
+  <div class="lesson-grid">
+
+    <div class="card lesson-card">
+      <h3>La liste de la veille</h3>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div><strong>Qui a quoi</strong>ChatGPT, Claude, rien. Vous constituerez les binômes en trente secondes au lieu de dix minutes.</div></div>
+        <div class="step"><div class="step-num">2</div><div><strong>Tout le monde arrive connecté</strong>Compte ouvert, mot de passe en poche, application installée sur le téléphone si vous prévoyez R2 ou T4. Un mot de passe oublié coûte cinq minutes de séance.</div></div>
+        <div class="step"><div class="step-num">3</div><div><strong>Envoyez le lien de la présentation à l'avance</strong><a href="exercices.html" style="color:#a5b4fc">exercices.html</a> — les blocs de matériel se copient d'un clic depuis n'importe quel poste ou téléphone. Ne leur envoyez pas cette page-ci.</div></div>
+        <div class="step"><div class="step-num">4</div><div><strong>Refaites les deux calculs de E2</strong>Sur votre propre compte, le matin même. C'est le seul exercice dont le résultat dépend du modèle du jour.</div></div>
+        <div class="step"><div class="step-num">5</div><div><strong>Vérifiez la fonction de R4 si vous la prévoyez</strong>Elle bouge d'une version à l'autre. Sinon, annoncez d'emblée la variante « à blanc ».</div></div>
+        <div class="step"><div class="step-num">6</div><div><strong>Choisissez les deux mécanismes de la séance</strong>Puis les exercices en fonction. Deux, pas six.</div></div>
+      </div>
+      <div class="highlight highlight-ok"><strong>Rien à installer</strong>Tous les exercices se font dans un navigateur ou sur un téléphone. Aucun logiciel, aucun droit administrateur.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Les cinq exercices qui dépendent d'un abonnement</h3>
+      <div class="table-wrap">
+        <table class="compare-table">
+          <thead><tr><th>Fiche</th><th>Ce qui manque en gratuit</th><th>La variante sur la fiche</th></tr></thead>
+          <tbody>
+            <tr><td>T3</td><td>Joindre un fichier volumineux</td><td>Coller le texte, par morceaux</td></tr>
+            <tr><td>P3</td><td>Analyser un fichier joint</td><td>Les formules marchent partout ; coller vingt lignes</td></tr>
+            <tr><td>R3</td><td>Les Projets</td><td>Bloc de contexte collé en tête de conversation</td></tr>
+            <tr><td>R4</td><td>Les tâches programmées</td><td>Exercice « à blanc », sur papier</td></tr>
+            <tr><td>D3</td><td>Accès aux deux outils</td><td>Rôle d'observateur, ou deux fois le même outil</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="highlight highlight-info"><strong>Le repli qui marche presque toujours</strong>Ce qui ne peut pas être joint peut être collé. Un texte collé par morceaux vaut un fichier joint dans huit cas sur dix — et cela s'applique à tous les exercices sur document.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Les cinq exercices à surveiller de près</h3>
+      <p>Pas pour leur difficulté, mais parce que c'est là que la règle 4 se fait oublier. Circulez pendant ces exercices.</p>
+      <div class="example-list">
+        <div class="example"><strong>T3 — Le document interrogé</strong><span>Quelqu'un joindra un contrat interne « parce que c'est plus pratique ». Annoncez la contrainte avant, et regardez les écrans.</span></div>
+        <div class="example"><strong>P3 — Le tableur</strong><span>Même risque avec un fichier de service. Imposez le tableau fictif de T1.</span></div>
+        <div class="example"><strong>R3 — Le contexte persistant</strong><span>Un projet garde les fichiers déposés. Contrairement à une conversation, on n'y pense plus après.</span></div>
+        <div class="example"><strong>R2 — La dictée</strong><span>On se surveille moins en parlant. Imposez un contenu personnel.</span></div>
+        <div class="example"><strong>T4 — L'image lue</strong><span>Le réflexe est de photographier ce qu'on a sous la main : écran de travail, document sur le bureau, tableau de la salle. Donnez une liste de sujets à photographier.</span></div>
+      </div>
+      <div class="highlight highlight-warn"><strong>Si un incident se produit</strong>Faire supprimer la conversation immédiatement, puis le signaler. Traité dans l'heure, c'est un incident mineur ; découvert six mois plus tard, c'est un problème. Et ce n'est pas une faute morale : c'est un réflexe à construire — c'est exactement ce que dit la <a href="index.html#lecon-34">leçon 34</a>, et c'est ce qu'il faut dire au participant concerné.</div>
+    </div>
+
+    <div class="card lesson-card">
+      <h3>Deux choses à savoir sur les outils</h3>
+      <div class="example-list">
+        <div class="example"><strong>Les noms de menus bougent plus vite que ces pages</strong><span>Si un intitulé ne correspond plus, cherchez la fonction et non le mot. Le tableau de correspondance est sur la page <a href="exercices.html#outils" style="color:#a5b4fc">Outils</a> de la présentation.</span></div>
+        <div class="example"><strong>Ces outils ne sont pas déterministes</strong><span>La même question posée deux fois ne donne pas la même réponse. Attendez-vous à ce que votre essai de la veille ne se reproduise pas à l'identique en séance — et dites-le, cela fait partie de ce qu'il faut comprendre.</span></div>
+      </div>
+      <div class="highlight highlight-key"><strong>Et une chose à savoir sur ces deux pages</strong>Elles vieillissent. Les noms de fonctions, les limites des versions gratuites et le comportement des modèles évoluent. À relire tous les six mois, en même temps que la <a href="index.html">formation</a> — pas plus souvent.</div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  Guide de l'animateur — Document interne, à ne pas projeter · La présentation à afficher : <a href="exercices.html">exercices.html</a> · La formation complète : <a href="index.html">34 leçons</a>
+</footer>
+
+<script>
+  const pages = Array.from(document.querySelectorAll('.page'));
+  const links = Array.from(document.querySelectorAll('.nav-link'));
+
+  function setPageFromHash() {
+    const hash = window.location.hash.replace('#', '') || 'accueil';
+    const target = document.getElementById(hash) ? hash : 'accueil';
+    pages.forEach(p => p.classList.toggle('active', p.id === target));
+    links.forEach(l => {
+      const h = (l.getAttribute('href') || '').replace('#', '');
+      l.classList.toggle('active', h === target);
+    });
+    window.scrollTo(0, 0);
+  }
+
+  function getCurrentIndex() {
+    const hash = window.location.hash.replace('#', '') || 'accueil';
+    const i = pages.findIndex(p => p.id === hash);
+    return i >= 0 ? i : 0;
+  }
+
+  window.addEventListener('keydown', e => {
+    const tag = document.activeElement ? document.activeElement.tagName : '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+    if (e.key === 'ArrowRight') { e.preventDefault(); const i = getCurrentIndex(); if (i < pages.length - 1) window.location.hash = pages[i+1].id; }
+    if (e.key === 'ArrowLeft')  { e.preventDefault(); const i = getCurrentIndex(); if (i > 0) window.location.hash = pages[i-1].id; }
+  });
+
+  window.addEventListener('hashchange', setPageFromHash);
+  setPageFromHash();
+</script>
+</body>
+</html>
