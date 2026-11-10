@@ -835,7 +835,7 @@
         <div class="example"><strong>Web Search (simple)</strong><span>Quelques sources, réponse rapide. Pour des questions factuelles récentes.</span></div>
         <div class="example"><strong>Deep Research</strong><span>Dizaines de sources, rapport complet. Prend 5–15 minutes. Pour sujets complexes nécessitant une vue complète.</span></div>
       </div>
-      <div class="highlight highlight-gpt"><strong>Équivalent Claude</strong>Claude dispose aussi d'une recherche web et d'un mode "Deep Research" (plans Pro/Team). Similaire, mais tend à mieux structurer les nuances et à signaler les incertitudes.</div>
+      <div class="highlight highlight-gpt"><strong>Équivalent Claude</strong>Claude dispose aussi d'une recherche web et d'un mode de recherche approfondie, le bouton « Research » (inclus dans Team). Similaire, mais tend à mieux structurer les nuances et à signaler les incertitudes.</div>
     </div>
     <div class="card lesson-card">
       <h3>Bonnes pratiques</h3>
@@ -988,7 +988,7 @@
         <div class="step"><div class="step-num">3</div><div><strong>Uploadez vos fichiers de référence</strong><br>Le GPT les utilisera pour répondre.</div></div>
         <div class="step"><div class="step-num">4</div><div><strong>Partagez à votre workspace</strong><br>Toute l'équipe y accède via "Mes GPTs".</div></div>
       </div>
-      <div class="highlight highlight-claude"><strong>Équivalent Claude</strong>Les "Projets partagés" Claude Team jouent un rôle similaire. Moins de customisation visuelle mais un comportement plus prévisible grâce à la robustesse du suivi d'instructions de Claude.</div>
+      <div class="highlight highlight-claude"><strong>Équivalent Claude</strong>Les "Projets partagés" Claude Team jouent un rôle similaire pour un dossier. Pour un format maison qui doit s'appliquer partout (note de service, compte rendu), l'équivalent est le skill — leçon 30.</div>
     </div>
     <div class="card lesson-card">
       <h3>GPT vs Projet vs Custom Instructions</h3>
@@ -1031,9 +1031,9 @@
     <div class="card lesson-card">
       <h3>Point sécurité & confidentialité</h3>
       <div class="example-list">
-        <div class="example"><strong>ChatGPT Business</strong><span>Les conversations ne sont pas utilisées pour entraîner les modèles. Données non partagées avec OpenAI par défaut.</span></div>
+        <div class="example"><strong>ChatGPT Business</strong><span>Les conversations ne sont pas utilisées pour entraîner les modèles. Elles restent néanmoins stockées chez OpenAI, hors de la maison.</span></div>
         <div class="example"><strong>Claude Team</strong><span>Même garantie : données hors training, stockage sécurisé. Politique Anthropic stricte sur la confidentialité entreprise.</span></div>
-        <div class="example"><strong>Règle commune</strong><span>Évitez tout de même de coller des données ultra-sensibles (données personnelles, secrets industriels) en clair dans les prompts.</span></div>
+        <div class="example"><strong>Règle commune</strong><span>« Pas d'entraînement » ne veut pas dire « rien ne sort ». Les données qui identifient une personne ne se collent dans aucun outil, quel que soit le plan. La liste complète est en leçon 34.</span></div>
       </div>
     </div>
     <div class="card lesson-card">
@@ -1090,9 +1090,9 @@
     <div class="card lesson-card">
       <h3>Mode agent dans ChatGPT vs Claude</h3>
       <div class="example-list">
-        <div class="example"><strong>ChatGPT (Operator/Canvas)</strong><span>Agent natif dans l'interface. Canvas pour travail itératif sur documents longs. Accès aux apps connectées (email, calendrier).</span></div>
-        <div class="example"><strong>Claude</strong><span>Excellent pour les tâches d'analyse multi-documents et de rédaction longue. Claude Code pour les agents techniques. Tend à mieux signaler ses incertitudes.</span></div>
-        <div class="example"><strong>Règle pratique</strong><span>ChatGPT agent = tâches nécessitant des connexions à des outils externes. Claude agent = tâches d'analyse, rédaction, traitement de documents.</span></div>
+        <div class="example"><strong>ChatGPT (mode agent)</strong><span>Agent intégré à l'interface : il navigue sur le web, remplit des formulaires et utilise vos apps connectées (email, calendrier). Canvas reste l'outil du travail itératif sur un document long.</span></div>
+        <div class="example"><strong>Claude</strong><span>Travaille sur vos fichiers depuis la conversation de l'application de bureau (leçon 29), se connecte à vos outils (Microsoft 365, Google Drive…) et, avec Claude Code, agit sur votre machine (leçon 16).</span></div>
+        <div class="example"><strong>Règle pratique</strong><span>Les deux savent désormais agir. Choisissez celui où se trouvent déjà vos documents et vos connexions, plutôt que de tout déplacer.</span></div>
       </div>
     </div>
   </div>
@@ -1123,7 +1123,7 @@
         <div class="step"><div class="step-num">1</div><div><strong>Formulez dans la conversation</strong><br>Incluez un moment précis (heure, date ou fréquence).</div></div>
         <div class="step"><div class="step-num">2</div><div><strong>ChatGPT propose la création</strong><br>Un bouton "Programmer" apparaît automatiquement.</div></div>
         <div class="step"><div class="step-num">3</div><div><strong>Confirmez</strong><br>La tâche est enregistrée dans votre liste de tasks.</div></div>
-        <div class="step"><div class="step-num">4</div><div><strong>Gérez via l'icône de tâches dans la barre latérale</strong><br>Visualisez, modifiez ou supprimez les tâches programmées.</div></div>
+        <div class="step"><div class="step-num">4</div><div><strong>Gérez-les depuis la page « Planifiées » de la barre latérale</strong><br>Depuis juin 2026 : visualisez, mettez en pause, modifiez ou supprimez vos tâches ponctuelles, récurrentes ou de surveillance.</div></div>
       </div>
     </div>
     <div class="card lesson-card">
@@ -1137,7 +1137,8 @@
     </div>
     <div class="card lesson-card">
       <h3>Limites actuelles</h3>
-      <div class="highlight highlight-warn"><strong>Points d'attention</strong>Les tasks ChatGPT déclenchent des notifications dans l'app. Elles ne s'intègrent pas encore nativement à votre calendrier ou email sans connecteur. Pour une automatisation plus puissante avec vos outils métiers, des solutions d'intégration tierces existent.</div>
+      <div class="highlight highlight-warn"><strong>Points d'attention</strong>Les tâches ChatGPT déclenchent des notifications dans l'app ; elles n'agissent sur votre calendrier ou vos emails que si un connecteur est activé. Une tâche créée dans un projet n'a pas accès aux fichiers de ce projet. Pour une automatisation entre vos outils métiers, voyez Power Automate (leçon 25).</div>
+      <div class="highlight highlight-claude" style="margin-top:12px;"><strong>Équivalent Claude</strong>L'application de bureau propose aussi des tâches planifiées (section « Planifiées » de la barre latérale) : chaque heure, chaque jour, en semaine ou chaque semaine. Une tâche qui a besoin de vos fichiers locaux ne tourne que si votre ordinateur est allumé.</div>
     </div>
   </div>
 </section>
@@ -1192,7 +1193,7 @@
         <div class="chip">Storyboards</div>
         <div class="chip">Couvertures de rapports</div>
       </div>
-      <div class="highlight highlight-warn" style="margin-top:16px;"><strong>Attention</strong>Les images générées ne doivent pas reproduire des logos, marques ou personnes réelles identifiables. Pour usage commercial, vérifiez les conditions d'utilisation OpenAI.</div>
+      <div class="highlight highlight-warn" style="margin-top:16px;"><strong>Attention</strong>Les images générées ne doivent pas reproduire des logos, marques ou personnes réelles identifiables. Une image générée diffusée à l'extérieur doit être signalée comme telle : c'est une obligation de l'AI Act, leçon 33.</div>
     </div>
   </div>
 </section>
@@ -1202,7 +1203,7 @@
   <div class="lesson-header">
     <div>
       <div class="tag tag-gpt">● ChatGPT Business — Leçon 10</div>
-      <h2>Vibe coding — Créer des outils sans developer</h2>
+      <h2>Vibe coding — Créer des outils sans développeur</h2>
     </div>
     <a class="btn btn-secondary" href="#accueil">↩ Retour</a>
   </div>
@@ -1269,16 +1270,16 @@
     </div>
     <div class="card lesson-card">
       <h3>Claude Code</h3>
-      <p>Outil CLI d'Anthropic. S'intègre directement dans le terminal du développeur. Lit tout le contexte de votre projet, comprend l'architecture globale avant d'agir.</p>
+      <p>L'agent d'Anthropic qui travaille directement sur votre ordinateur : dans l'application de bureau, dans un éditeur de code ou dans un terminal. Il lit tout votre projet avant d'agir, puis crée et modifie les fichiers lui-même.</p>
       <div class="example-list">
         <div class="example"><strong>Points forts</strong><span>Contexte très long, excellente compréhension architecturale, peu d'hallucinations sur les APIs existantes.</span></div>
-        <div class="example"><strong>Usages non-dev</strong><span>Même sans coder, un collaborateur peut décrire un besoin d'automatisation qui sera implémenté par l'IA ou le service IT.</span></div>
+        <div class="example"><strong>Usages non-dev</strong><span>Sans savoir coder, un collaborateur qui décrit précisément le résultat voulu peut faire construire l'outil par Claude Code lui-même. Le portail Direction et cette formation ont été faits ainsi (leçon 29).</span></div>
       </div>
     </div>
     <div class="card lesson-card">
       <h3>Pour les non-développeurs : ce que ça change</h3>
       <div class="example-list">
-        <div class="example"><strong>Automatisation sur mesure devient accessible</strong><span>Décrire un process répétitif → un développeur + Claude Code ou Codex le code en quelques heures au lieu de jours.</span></div>
+        <div class="example"><strong>Automatisation sur mesure devient accessible</strong><span>Décrire un process répétitif → Claude Code ou Codex le code en quelques heures au lieu de jours, avec ou sans développeur. La compétence rare devient la description exacte du besoin et la vérification du résultat.</span></div>
         <div class="example"><strong>Revue de code accélérée</strong><span>Comprendre ce que fait un script sans le lire ligne par ligne : demandez simplement à l'IA de l'expliquer.</span></div>
         <div class="example"><strong>Prototypes fonctionnels en 1 session</strong><span>Un petit outil interne qui avant demandait un prestataire peut être créé en interne en quelques heures.</span></div>
       </div>
@@ -1352,8 +1353,9 @@
       <h3>Comment accéder à Claude Team</h3>
       <div class="steps">
         <div class="step"><div class="step-num">1</div><div><strong>claude.ai</strong><br>Interface web principale. Identique à ChatGPT en termes d'expérience.</div></div>
-        <div class="step"><div class="step-num">2</div><div><strong>Application mobile</strong><br>iOS et Android disponibles.</div></div>
-        <div class="step"><div class="step-num">3</div><div><strong>Connexion avec votre compte Team</strong><br>Vos projets et préférences sont synchronisés.</div></div>
+        <div class="step"><div class="step-num">2</div><div><strong>Application de bureau (Windows, Mac)</strong><br>Indispensable pour confier un travail sur vos fichiers (leçon 29), planifier des tâches et utiliser Claude Code.</div></div>
+        <div class="step"><div class="step-num">3</div><div><strong>Application mobile</strong><br>iOS et Android disponibles.</div></div>
+        <div class="step"><div class="step-num">4</div><div><strong>Connexion avec votre compte Team</strong><br>Vos projets et préférences sont synchronisés.</div></div>
       </div>
     </div>
   </div>
@@ -1389,7 +1391,7 @@
     </div>
     <div class="card lesson-card">
       <h3>Avantage fenêtre de contexte étendue</h3>
-      <p>200 000 tokens = environ 150 000 mots. Ce que ça permet concrètement :</p>
+      <p>Un million de tokens = environ 750 000 mots, soit plusieurs milliers de pages. Ce que ça permet concrètement :</p>
       <div class="example-list">
         <div class="example"><strong>Rapport annuel complet</strong><span>Uploadez le rapport de 100 pages et posez des questions précises. Claude lit tout.</span></div>
         <div class="example"><strong>Contrats longs</strong><span>Analysez un contrat de 80 pages, demandez les clauses à risque, un résumé exécutif, les points à négocier.</span></div>
@@ -1445,8 +1447,8 @@
       <div class="highlight highlight-claude"><strong>Bon à savoir</strong>L'activation de la recherche web peut se faire globalement (Settings → Features → Web search) ou conversation par conversation.</div>
     </div>
     <div class="card lesson-card">
-      <h3>Deep Research Claude</h3>
-      <p>Claude propose aussi un mode Deep Research. Le fonctionnement est similaire à ChatGPT : recherche multi-sources, rapport structuré avec citations.</p>
+      <h3>Recherche approfondie Claude</h3>
+      <p>Claude propose aussi un mode de recherche approfondie, le bouton « Research ». Le fonctionnement est similaire à ChatGPT : recherche multi-sources, rapport structuré avec citations.</p>
       <div class="example-list">
         <div class="example"><strong>Similaire à ChatGPT</strong><span>Recherche multi-sources, rapport structuré avec citations.</span></div>
         <div class="example"><strong>Différence notable</strong><span>Claude tend à mieux nuancer ses conclusions et à signaler les contradictions entre sources.</span></div>
@@ -1539,13 +1541,13 @@
       <div class="example-list">
         <div class="example"><strong>Accès à vos données</strong><span>Connectez Claude à votre CRM, votre base de données, vos fichiers Google Drive, Notion, etc.</span></div>
         <div class="example"><strong>Actions directes</strong><span>Claude peut lire ET agir : créer un ticket, mettre à jour une fiche, envoyer un message.</span></div>
-        <div class="example"><strong>En cours de déploiement</strong><span>Ces connexions se configurent avec le support technique. Demandez à votre administrateur les intégrations disponibles.</span></div>
+        <div class="example"><strong>Où les activer</strong><span>Dans les paramètres de Claude, rubrique « Connecteurs ». Sur un compte Team, l'administrateur choisit d'abord lesquels sont autorisés : demandez-lui avant de connecter un outil qui contient des données de clients.</span></div>
       </div>
     </div>
     <div class="card lesson-card">
       <h3>À retenir</h3>
       <div class="example-list">
-        <div class="example"><strong>Claude Code est un accélérateur pour votre équipe technique</strong><span>Les développements qui prenaient des jours prennent des heures.</span></div>
+        <div class="example"><strong>Claude Code n'est pas réservé à une équipe technique</strong><span>Les développements qui prenaient des jours prennent des heures, y compris pour quelqu'un qui ne code pas mais vérifie ce qu'il obtient.</span></div>
         <div class="example"><strong>Pour vous : savoir décrire ce dont vous avez besoin</strong><span>C'est maintenant la compétence clé, pas le code lui-même.</span></div>
         <div class="example"><strong>Les macros Office sont accessibles immédiatement</strong><span>Sans configuration, dans la conversation Claude standard.</span></div>
       </div>
@@ -1607,12 +1609,12 @@
           <tr>
             <td>Connexions outils externes</td>
             <td>⭐ Apps natives (email, calendrier, etc.)</td>
-            <td>✅ MCP en déploiement, moins d'intégrations natives</td>
+            <td>✅ Connecteurs (Microsoft 365, Google Drive, Slack…), activés par l'administrateur</td>
           </tr>
           <tr>
             <td>Tâches programmées / récurrentes</td>
-            <td>⭐ Tasks & Schedule natifs</td>
-            <td>❌ Pas de scheduling natif</td>
+            <td>✅ Tâches planifiées natives (web et mobile)</td>
+            <td>✅ Tâches planifiées dans l'application de bureau</td>
           </tr>
           <tr>
             <td>Respect d'instructions complexes</td>
@@ -1632,7 +1634,7 @@
           <tr>
             <td>GPTs / assistants spécialisés</td>
             <td>⭐ GPT Store + création facile</td>
-            <td>✅ Projets partagés (moins de personnalisation visuelle)</td>
+            <td>✅ Projets partagés et skills (leçon 30)</td>
           </tr>
         </tbody>
       </table>
@@ -1651,7 +1653,7 @@
       <h3>Règle simple de décision</h3>
       <div class="example-list">
         <div class="example"><strong>Utilisez Copilot quand</strong><span>Vous êtes dans Word, Excel, PowerPoint, Outlook ou Teams. Copilot agit là où vous êtes, sans copier-coller.</span></div>
-        <div class="example"><strong>Utilisez ChatGPT quand</strong><span>Vous avez besoin de générer des images, d'utiliser des tâches programmées, de connecter des outils externes natifs, ou d'un GPT spécialisé existant dans le Store.</span></div>
+        <div class="example"><strong>Utilisez ChatGPT quand</strong><span>Vous avez besoin de générer des images, ou d'un GPT spécialisé existant dans le Store.</span></div>
         <div class="example"><strong>Utilisez Claude quand</strong><span>Vous analysez de longs documents, rédigez quelque chose d'important où le ton et la précision comptent, ou avez besoin de respecter des instructions très spécifiques.</span></div>
         <div class="example"><strong>Les trois sont équivalents pour</strong><span>Reformulation, résumés, brainstorming, aide à la décision, réponses rapides. Utilisez celui que vous avez sous la main.</span></div>
       </div>
@@ -1660,8 +1662,8 @@
       <h3>Stratégie d'usage recommandée</h3>
       <div class="example-list">
         <div class="example"><strong>Commencez par Claude pour la rédaction sérieuse</strong><span>Notes stratégiques, rapports, analyses. La qualité du rendu justifie l'habitude.</span></div>
-        <div class="example"><strong>ChatGPT pour les tâches connectées et créatives</strong><span>Génération d'images, tâches planifiées, connexion à vos apps.</span></div>
-        <div class="example"><strong>Les deux pour la recherche</strong><span>Comparez les résultats Deep Research des deux pour les sujets stratégiques.</span></div>
+        <div class="example"><strong>ChatGPT pour les tâches connectées et créatives</strong><span>Génération d'images, GPTs spécialisés, travail en mobilité.</span></div>
+        <div class="example"><strong>Les deux pour la recherche</strong><span>Comparez les résultats des recherches approfondies des deux pour les sujets stratégiques.</span></div>
       </div>
     </div>
   </div>
@@ -1742,7 +1744,7 @@
     <div class="card lesson-card">
       <h3>Quand utiliser Perplexity plutôt que ChatGPT/Claude</h3>
       <div class="example-list">
-        <div class="example"><strong>Information récente et vérifiable</strong><span>"Quel est le CA de [concurrent] en 2024 ?" → Perplexity trouve et cite la source directement.</span></div>
+        <div class="example"><strong>Information récente et vérifiable</strong><span>"Quel est le CA de [concurrent] en 2025 ?" → Perplexity trouve et cite la source directement.</span></div>
         <div class="example"><strong>Actualité sectorielle</strong><span>Dernières nouvelles d'un marché, d'une réglementation, d'une entreprise spécifique.</span></div>
         <div class="example"><strong>Fact-checking rapide</strong><span>Vérifier une information avant de l'inclure dans un document important.</span></div>
         <div class="example"><strong>Recherche de sources primaires</strong><span>Trouver des études, rapports officiels, données statistiques récentes.</span></div>
@@ -1783,7 +1785,7 @@
     <div class="card lesson-card">
       <h3>Principe</h3>
       <div class="highlight highlight-info" style="margin-bottom:14px;"><strong>Changement de nom — juillet 2026</strong>NotebookLM s'appelle désormais <strong>Gemini Notebook</strong>. Même outil, même principe. Si vous cherchez « NotebookLM », c'est ici.</div>
-      <p>Outil Google qui confine l'IA à un corpus de documents que vous fournissez. L'IA répond uniquement depuis vos sources — pas d'hallucination possible sur des faits extérieurs.</p>
+      <p>Outil Google qui confine l'IA à un corpus de documents que vous fournissez. L'IA répond uniquement depuis vos sources, ce qui réduit fortement les inventions — sans les supprimer : elle peut encore mal lire ou mal résumer un passage. D'où l'intérêt des citations.</p>
       <div class="flow">
         <div class="flow-box"><strong>Vos sources</strong><span>PDF, Google Docs, URLs, vidéos YouTube, transcriptions</span></div>
         <div class="arrow">↓</div>
@@ -1817,7 +1819,7 @@
       <div class="example-list">
         <div class="example"><strong>Gemini Notebook</strong><span>Confinement strict aux sources. Chaque réponse citée. Pas de connaissances générales. Plan gratuit disponible.</span></div>
         <div class="example"><strong>Projets Claude Team</strong><span>Documents + connaissances générales. Plus flexible. Peut raisonner au-delà des sources. Meilleure qualité rédactionnelle.</span></div>
-        <div class="example"><strong>Règle</strong><span>Gemini Notebook quand vous voulez zéro hallucination et traçabilité source. Claude quand vous voulez un travail de synthèse plus élaboré.</span></div>
+        <div class="example"><strong>Règle</strong><span>Gemini Notebook quand vous voulez une réponse vérifiable passage par passage. Claude quand vous voulez un travail de synthèse plus élaboré.</span></div>
       </div>
     </div>
   </div>
@@ -1884,7 +1886,7 @@
       <h3>L'écosystème Google IA</h3>
       <p>Google propose plusieurs points d'entrée vers ses modèles Gemini, avec des forces particulières selon l'usage.</p>
       <div class="example-list">
-        <div class="example"><strong>Gemini (gemini.google.com)</strong><span>L'interface conversationnelle grand public, équivalent de ChatGPT. Gemini Advanced (abonnement Google One) pour les modèles les plus puissants.</span></div>
+        <div class="example"><strong>Gemini (gemini.google.com)</strong><span>L'interface conversationnelle grand public, équivalent de ChatGPT. L'abonnement Google AI Pro (ex-Gemini Advanced) donne accès aux modèles les plus puissants.</span></div>
         <div class="example"><strong>Gemini dans Google Workspace</strong><span>Intégré à Gmail, Docs, Sheets, Slides. Si vous utilisez Google Workspace, c'est l'IA la plus proche de vos outils existants.</span></div>
         <div class="example"><strong>Google AI Studio</strong><span>Interface d'expérimentation pour tester les modèles Gemini. Surtout utile pour les usages techniques.</span></div>
       </div>
@@ -1938,7 +1940,7 @@
         </thead>
         <tbody>
           <tr><td>ChatGPT Business</td><td>Génération d'images, tâches planifiées, GPTs spécialisés, connexions apps, vibe coding</td><td>Analyse de très longs documents, rédaction longue nécessitant précision</td></tr>
-          <tr><td>Claude Team</td><td>Rédaction longue, analyse documentaire, instructions complexes, artefacts interactifs</td><td>Génération d'images, tâches planifiées natives</td></tr>
+          <tr><td>Claude Team</td><td>Rédaction longue, analyse documentaire, instructions complexes, artefacts interactifs</td><td>Génération d'images</td></tr>
           <tr><td style="color:#93c5fd">Microsoft 365 Copilot</td><td>Dans Word/Excel/PowerPoint/Outlook/Teams — accès direct à votre contexte Microsoft 365, emails, réunions, fichiers SharePoint</td><td>Tâches complexes hors Microsoft 365, analyse de documents très longs, créativité avancée</td></tr>
           <tr><td style="color:#93c5fd">Power Automate</td><td>Automatiser des flux répétitifs entre apps Microsoft (envoi d'emails, notifications, traitement de données) — sans coder</td><td>Remplacement d'un logiciel métier, tâches ponctuelles non répétitives</td></tr>
           <tr><td>Perplexity</td><td>Recherche factuelle récente, fact-checking, sources primaires</td><td>Rédaction, analyse approfondie</td></tr>
@@ -1955,7 +1957,7 @@
         <div class="step"><div class="step-num">2</div><div><strong>Créez un projet pour chaque sujet récurrent</strong><br>Direction → projets par sujet stratégique avec documents uploadés.</div></div>
         <div class="step"><div class="step-num">3</div><div><strong>Investissez dans le prompt</strong><br>2 minutes de réflexion sur le prompt = 20 minutes de corrections économisées.</div></div>
         <div class="step"><div class="step-num">4</div><div><strong>Choisissez l'outil adapté</strong><br>Copilot dans vos apps Office, Claude pour la rédaction sérieuse, ChatGPT pour les images et tâches planifiées, Perplexity pour les faits.</div></div>
-        <div class="step"><div class="step-num">5</div><div><strong>Identifiez vos workflows répétitifs</strong><br>Tout ce que vous faites chaque semaine avec les mêmes étapes peut être automatisé — via Power Automate ou Tasks ChatGPT.</div></div>
+        <div class="step"><div class="step-num">5</div><div><strong>Identifiez vos workflows répétitifs</strong><br>Tout ce que vous faites chaque semaine avec les mêmes étapes peut être automatisé — via Power Automate ou les tâches planifiées de ChatGPT et de Claude.</div></div>
         <div class="step"><div class="step-num">6</div><div><strong>Activez Copilot là où vous êtes</strong><br>Si vous avez la licence Microsoft 365 Copilot, utilisez-le dans Outlook, Teams et Excel. L'adoption se fait naturellement car vous restez dans vos outils habituels.</div></div>
         <div class="step"><div class="step-num">7</div><div><strong>Uploadez vos documents dans Claude</strong><br>Excel, Word, PDF, PowerPoint — Claude les lit tous. Avant d'analyser un long document manuellement, essayez d'abord de l'uploader et de poser vos questions.</div></div>
       </div>
@@ -1977,7 +1979,7 @@
         <div class="example"><strong>Analyse d'un dossier de 100 pages</strong><span>L'IA extrait les points clés en 3 minutes. Sans IA : 2 heures de lecture.</span></div>
         <div class="example"><strong>Recherche de marché</strong><span>Deep Research en 15 minutes. Sans IA : 3 heures de navigation et de synthèse.</span></div>
       </div>
-      <div class="highlight highlight-info"><strong>La règle des 10x</strong>Si une tâche prend 1 heure sans IA et 6 minutes avec : c'est un levier 10x. Identifiez vos levier 10x et commencez par eux.</div>
+      <div class="highlight highlight-info"><strong>La règle des 10x</strong>Si une tâche prend 1 heure sans IA et 6 minutes avec : c'est un levier 10x. Identifiez vos leviers 10x et commencez par eux.</div>
     </div>
   </div>
 </section>
@@ -1995,8 +1997,8 @@
     <div class="card lesson-card">
       <h3>Ce qu'est Microsoft 365 Copilot</h3>
       <p>Copilot est l'IA de Microsoft intégrée directement dans vos applications Office : Word, Excel, PowerPoint, Outlook, Teams. Contrairement à ChatGPT ou Claude que vous ouvrez séparément, Copilot vient à vous dans vos outils habituels — et connaît votre contexte Microsoft 365.</p>
-      <div class="highlight" style="background:rgba(96,165,250,0.1);border:1px solid rgba(96,165,250,0.2);color:#93c5fd;margin-top:12px;"><strong>Accès & tarif</strong>Licence séparée, facturée environ 30 $ par utilisateur et par mois, <em>en plus</em> de votre licence Microsoft 365. Bouton ou icône Copilot visible dans chaque app Office une fois activé.</div>
-      <div class="highlight" style="background:rgba(96,165,250,0.1);border:1px solid rgba(96,165,250,0.2);color:#93c5fd;margin-top:12px;"><strong>Où en est Copilot en 2026</strong>Plus de 20 millions de sièges payants en entreprise. Copilot Studio et les agents autonomes en ont fait une véritable plateforme d'automatisation de back-office (Microsoft 365, Dataverse, systèmes connectés). Le point de vigilance de 2026 n'est plus la capacité mais la <strong>gouvernance des agents</strong> — voir leçon 31.</div>
+      <div class="highlight" style="background:rgba(96,165,250,0.1);border:1px solid rgba(96,165,250,0.2);color:#93c5fd;margin-top:12px;"><strong>Accès & tarif</strong>Licence séparée, <em>en plus</em> de votre licence Microsoft 365 : environ 30 $ par utilisateur et par mois en version entreprise, environ 21 $ pour la formule Copilot Business réservée aux organisations de moins de 300 utilisateurs. Bouton ou icône Copilot visible dans chaque app Office une fois activé.</div>
+      <div class="highlight" style="background:rgba(96,165,250,0.1);border:1px solid rgba(96,165,250,0.2);color:#93c5fd;margin-top:12px;"><strong>Où en est Copilot en 2026</strong>Plus de 20 millions de sièges payants en entreprise. Copilot Studio et les agents autonomes en ont fait une véritable plateforme d'automatisation de back-office (Microsoft 365, Dataverse, systèmes connectés). Le point de vigilance de 2026 n'est plus la capacité mais la <strong>gouvernance des agents</strong> — voir leçon 31. Depuis août 2026, les licences payantes peuvent aussi choisir un modèle Claude dans Word, Excel, PowerPoint et Copilot Chat.</div>
       <div class="chips" style="margin-top:12px;">
         <div class="chip" style="background:rgba(96,165,250,0.1);color:#93c5fd;border-color:rgba(96,165,250,0.2)">Word</div>
         <div class="chip" style="background:rgba(96,165,250,0.1);color:#93c5fd;border-color:rgba(96,165,250,0.2)">Excel</div>
@@ -2067,10 +2069,10 @@
     <div class="card lesson-card">
       <h3>Limites à connaître</h3>
       <div class="example-list">
-        <div class="example"><strong>Qualité de rédaction</strong><span>Copilot produit des textes corrects mais moins nuancés que Claude pour les documents stratégiques importants. Pour un rapport CODIR, Claude reste supérieur.</span></div>
+        <div class="example"><strong>Qualité de rédaction</strong><span>Avec son modèle par défaut, Copilot produit des textes corrects mais moins nuancés. Si votre licence le permet, choisissez un modèle Claude dans le sélecteur pour un document qui compte.</span></div>
         <div class="example"><strong>Pas d'images générées</strong><span>Copilot peut intégrer des images dans PowerPoint depuis une bibliothèque, mais ne génère pas d'illustrations libres comme ChatGPT.</span></div>
         <div class="example"><strong>Dépendance à Microsoft 365</strong><span>Les fonctionnalités contextuelles (emails, fichiers, réunions) nécessitent que votre organisation utilise l'écosystème Microsoft.</span></div>
-        <div class="example"><strong>Licence dédiée</strong><span>Copilot pour Microsoft 365 est une licence séparée (~30$/utilisateur/mois en sus de Microsoft 365).</span></div>
+        <div class="example"><strong>Licence dédiée</strong><span>Copilot pour Microsoft 365 est une licence séparée (~21 à 30 $/utilisateur/mois en sus de Microsoft 365). La version gratuite, Copilot Chat, ne connaît pas vos emails ni vos fichiers.</span></div>
       </div>
     </div>
   </div>
@@ -2181,12 +2183,14 @@
   </div>
   <div class="lesson-grid">
     <div class="card lesson-card">
-      <h3>Deux façons de combiner Claude et Office</h3>
-      <p>Claude n'est pas intégré nativement dans Word ou Excel comme Copilot. Mais deux approches vous permettent de l'utiliser puissamment avec vos fichiers Office — chacune avec ses forces.</p>
+      <h3>Trois façons de combiner Claude et Office</h3>
+      <p>Depuis mai 2026, Claude est aussi intégré directement dans Excel, PowerPoint et Word, sous forme de compléments inclus dans votre abonnement Team. Trois approches, chacune avec ses forces.</p>
       <div class="flow">
         <div class="flow-box"><strong>Approche 1 — Upload dans Claude</strong><span>Ouvrez claude.ai → uploadez votre fichier Word, Excel ou PowerPoint → travaillez dessus en conversation</span></div>
         <div class="arrow">↓</div>
-        <div class="flow-box"><strong>Approche 2 — Claude Code Desktop</strong><span>Application Claude Code sur votre ordinateur → accès direct à vos fichiers locaux → lit, modifie, crée des fichiers Office</span></div>
+        <div class="flow-box"><strong>Approche 2 — Claude dans Excel, PowerPoint et Word</strong><span>Un panneau Claude dans l'application, comme Copilot. Il lit le fichier ouvert et le modifie sur place. L'administrateur Microsoft 365 doit d'abord installer le complément pour l'organisation.</span></div>
+        <div class="arrow">↓</div>
+        <div class="flow-box"><strong>Approche 3 — L'application de bureau sur vos fichiers</strong><span>Vous déposez un dossier entier → Claude lit, modifie et crée des fichiers Office (leçon 29), ou Claude Code pour une automatisation durable</span></div>
       </div>
     </div>
     <div class="card lesson-card">
@@ -2217,14 +2221,14 @@
       </div>
     </div>
     <div class="card lesson-card">
-      <h3>Claude Code Desktop — L'approche avancée</h3>
-      <p>Claude Code est une application qui s'installe sur votre ordinateur (Windows, Mac) et donne à Claude un accès direct à vos fichiers locaux. Pour les utilisateurs à l'aise avec la technologie :</p>
+      <h3>L'application de bureau — l'approche la plus puissante</h3>
+      <p>L'application Claude pour Windows et Mac donne à Claude un accès direct aux fichiers que vous lui confiez. Pour un travail ponctuel, la conversation suffit ; pour une automatisation qui doit tourner régulièrement, Claude Code :</p>
       <div class="example-list">
         <div class="example"><strong>Lire et modifier des fichiers Office</strong><span>Claude Code peut lire vos fichiers .xlsx, .docx, .pptx directement sur votre disque et les modifier ou en créer de nouveaux.</span></div>
         <div class="example"><strong>Automatiser des tâches répétitives</strong><span>"Lis tous les fichiers Excel du dossier Rapports, extrais les chiffres clés et génère un tableau consolidé."</span></div>
         <div class="example"><strong>Scripts d'automatisation sur mesure</strong><span>Décrire un besoin → Claude Code écrit et exécute le script Python ou VBA → résultat dans vos fichiers.</span></div>
       </div>
-      <div class="highlight highlight-claude" style="margin-top:12px;"><strong>Pour qui ?</strong>Claude Code Desktop est particulièrement adapté aux utilisateurs qui gèrent beaucoup de fichiers, ont des besoins d'automatisation récurrents, ou travaillent avec des données. Pas besoin de savoir coder — il faut juste savoir décrire précisément ce qu'on veut.</div>
+      <div class="highlight highlight-claude" style="margin-top:12px;"><strong>Pour qui ?</strong>Cette approche est particulièrement adaptée aux utilisateurs qui gèrent beaucoup de fichiers, ont des besoins d'automatisation récurrents, ou travaillent avec des données. Pas besoin de savoir coder — il faut juste savoir décrire précisément ce qu'on veut.</div>
     </div>
     <div class="card lesson-card">
       <h3>Claude vs Copilot sur Office : quand choisir quoi</h3>
@@ -2235,21 +2239,21 @@
       </div>
     </div>
     <div class="card lesson-card">
-      <h3>Les nouvelles intégrations Claude (2025-2026)</h3>
+      <h3>Les intégrations Claude en 2026</h3>
       <div class="example-list">
-        <div class="example"><strong>Intégrations MCP (Model Context Protocol)</strong><span>Le protocole ouvert d'Anthropic permet à Claude de se connecter à des systèmes tiers. Des intégrations avec des outils de productivité (Notion, Google Drive, GitHub…) sont disponibles ou en cours de déploiement.</span></div>
+        <div class="example"><strong>Connecteurs</strong><span>Claude se connecte à Microsoft 365 (Outlook, SharePoint, OneDrive, Teams), Google Drive, Notion, Slack et d'autres, grâce au protocole ouvert MCP. L'administrateur choisit ceux qui sont autorisés. Un complément Outlook est en bêta.</span></div>
         <div class="example"><strong>Claude dans VS Code et JetBrains</strong><span>Extensions IDE pour les développeurs. Claude Code s'intègre directement dans l'environnement de développement — comprend l'architecture du projet, refactorise, génère des tests.</span></div>
         <div class="example"><strong>API Claude pour Power Automate</strong><span>Via le connecteur HTTP de Power Automate, vous pouvez appeler l'API Claude dans vos flux pour ajouter une couche d'intelligence avancée (résumé, analyse, génération de contenu).</span></div>
       </div>
-      <div class="highlight highlight-claude" style="margin-top:12px;"><strong>Tendance</strong>La frontière entre "IA externe" et "IA intégrée dans vos outils" s'efface rapidement. Dans 12-18 mois, Claude sera probablement accessible directement depuis encore plus d'applications via ces protocoles d'intégration ouverts.</div>
+      <div class="highlight highlight-claude" style="margin-top:12px;"><strong>Tendance confirmée</strong>La frontière entre "IA externe" et "IA intégrée dans vos outils" s'est effacée en 2026 : Claude est dans Excel, PowerPoint et Word, et proposé comme modèle dans Microsoft 365 Copilot. La question n'est plus « quel outil ouvrir » mais « quel modèle choisir dans l'outil où je suis ».</div>
     </div>
     <div class="card lesson-card">
       <h3>Astuce : workflow gagnant Claude + Office</h3>
       <div class="steps">
         <div class="step"><div class="step-num">1</div><div><strong>Identifiez votre document source</strong><br>Rapport, tableau Excel, présentation existante ou document à créer.</div></div>
-        <div class="step"><div class="step-num">2</div><div><strong>Uploadez ou copiez dans Claude</strong><br>Claude accepte Word, Excel, PowerPoint, PDF. Pour Excel : copiez les données si le fichier est lourd.</div></div>
+        <div class="step"><div class="step-num">2</div><div><strong>Ouvrez Claude là où est le fichier</strong><br>Le complément Claude si le fichier est ouvert dans Excel, PowerPoint ou Word ; sinon, déposez-le dans la conversation.</div></div>
         <div class="step"><div class="step-num">3</div><div><strong>Travaillez en conversation</strong><br>Posez des questions, demandez des améliorations, itérez. Claude garde le contexte tout au long.</div></div>
-        <div class="step"><div class="step-num">4</div><div><strong>Récupérez le résultat</strong><br>Copiez le texte amélioré, la formule générée ou la macro VBA directement dans votre document Office.</div></div>
+        <div class="step"><div class="step-num">4</div><div><strong>Récupérez le résultat</strong><br>Dans le complément, il est déjà dans votre document ; depuis la conversation, Claude vous rend un fichier Office modifié à télécharger.</div></div>
       </div>
     </div>
   </div>
@@ -2511,7 +2515,6 @@
         <div class="example"><strong>o3 — retiré le 26 août 2026</strong><span>Après 90 jours de transition. C'était le modèle de raisonnement de référence de 2025 ; son rôle est repris par le curseur d'effort de GPT-6.</span></div>
         <div class="example"><strong>GPT-4.5 — retiré le 27 juin 2026</strong><span>Après 30 jours de transition.</span></div>
         <div class="example"><strong>Navigateur Atlas — arrêté le 9 août 2026</strong><span>OpenAI a replié ses fonctions agentiques de navigation directement dans ChatGPT et Codex. Le navigateur séparé n'existe plus.</span></div>
-      </div>
         <div class="example"><strong>GPT-5.6 Terra — remplacé dès septembre 2026</strong><span>Un mois après avoir été présenté comme un palier durable. Exemple parfait de la règle ci-dessous.</span></div>
         <div class="example"><strong>L'onglet Cowork — fondu dans la conversation le 16 septembre 2026</strong><span>La fonction existe toujours, c'est l'onglet qui a disparu. Voir leçon 29.</span></div>
       </div>
