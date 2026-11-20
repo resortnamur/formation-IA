@@ -344,9 +344,8 @@ ce qui a disparu ou changé de nom depuis six mois ; les quotas par type de siè
    du Resort restent-ils génériques (« un avis client », « un contrat »), ou garde-t-on les
    cas nommés comme l'actuelle leçon 27 ? Recommandation : génériques.
 2. **Le sort de la leçon 27** (demandes Event) : annexe, ou suppression ?
-3. **Copilot** : trois leçons actuelles. Troisième colonne dans les encadrés, ou chapitre
-   unique en annexe ? Recommandation : troisième colonne, et seulement là où il est
-   réellement utilisé.
+3. **Copilot : abandonné** (décision du 20/11/2026). Pas de colonne dans les encadrés,
+   pas de chapitre. Les trois leçons de la v6 ne sont pas reprises. Ne pas le reproposer.
 4. **L'atelier des 11 chantiers** (`exercices.html`) n'est pas touché : il est construit sur
    la rigueur, pas sur des fonctionnalités, et ne vieillit pas de la même façon.
 
@@ -362,4 +361,4 @@ ce qui a disparu ou changé de nom depuis six mois ; les quotas par type de siè
   dans le sélecteur réel, Pro est le cinquième cran d'effort, pas un modèle.
 - **Omission de ChatGPT** : sa réponse ne mentionne nulle part les Skills, alors qu'elles
   existent et qu'une skill du Resort est déjà partagée dans l'espace de travail.
-- **Pas encore regardé** : Copilot.
+- **Copilot** : écarté de la formation, il n'y a donc rien à y vérifier.
